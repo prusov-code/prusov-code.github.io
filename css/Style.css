@@ -67,7 +67,12 @@ ul {
   -webkit-box-align: center;
           align-items: center;
 }
-
+nav #menu ul li:last-child a {
+  display: flex;
+}
+nav #menu ul li:last-child:after {
+  display: none;
+}
 #brand {
   padding-left: 40px;
 }
