@@ -5,13 +5,81 @@
 	<link rel="stylesheet" type="text/css" href="/css/Style.css">
 	<title>Prusov-Code | Разработка сайтов под ключ | Full-stack web developer Nikita Prusov</title>
 	<script src="https://kit.fontawesome.com/d4ecae1147.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+    <script src="/js/smoth_scroll.js" defer></script>
+    <script src="/js/scroll_to_top.js" defer></script>
+    <script src="/js/libs/smooth_scroll_plugin.js" defer></script>
 </head>
 <body>
+ <a id="scroll_top" title="Наверх"></a>
  <header>
- 	
+ 	<div class="top">
+ 		<h1>Prusov-code</h1>
+ 	</div>
+ 	<div class="bottom">
+ 		<ul class="nav">
+ 			<a href="#"><li>Обо мне</li></a>
+ 			<a href="#"><li>Принципы работы</li></a>
+ 			<a href="#"><li>Работы</li></a>
+ 			<a href="#"><li>Контакты</li></a>
+ 			<a href="#technical_part"><li>Технический раздел</li></a>
+ 		</ul>
+ 	</div>
  </header>
  <main>
- 	
+ 	<section class="contacts">
+      <h1>Контакты</h1>
+      <h3>Интересуют услуги? Свяжитесь со мной при помощи контактов ниже</h3>  
+      <div class="contacts_inner">
+            <a href="tel: +79857002772" class="footer_regular"><i class="fa fa-phone" aria-hidden="true"></i>+79857002772</a>
+        <a href="mailto: prusov-official@yandex.ru" class="footer_regular"><i class="fa fa-envelope-o" aria-hidden="true"></i>prusov-official@yandex.ru</a>
+        <a href="https://t.me/nikita_qwerty" class="footer_regular"><i class="fa fa-telegram" aria-hidden="true"></i>@nikita_qwerty</a>
+        <a href="https://vk.com/nik_prusov" class="footer_regular"><i class="fa fa-vk" aria-hidden="true"></i>Никита Прусов</a>
+      </div>
+    </section>
+    <section id="technical_part" class="technical_part">
+        <h1>Технический раздел</h1>
+        <h3>Основные языки программирования:</h3>
+        <div class="programming_languages">
+            <p><img src="/images/html_icon2.png" alt="html">HTML</p>
+            <p><img src="/images/xml.png" alt="html">XML</p>
+            <p><img src="/images/css.png" alt="css">CSS</p>
+            <p><img src="/images/js.png" alt="js">JavaScript</p>
+            <p><img src="/images/php.png" alt="html">PHP</p>
+            <p><img src="/images/sql.png" alt="html">SQL</p>
+        </div>
+        <h3>Фреймворки, библиотеки и другие технологии:</h3>
+        <div class="programming_languages">
+            <p><img src="/images/laravel.png" alt="html">Laravel</p>
+            <p><img src="/images/redbeanphp.png" alt="html">RedBeanPHP</p>
+            <p><img src="/images/jquery.png" alt="html">Jquery</p>
+            <p><img src="/images/sass.png" alt="html">Sass</p>
+            <p><img src="/images/less.png" alt="html">Less</p>
+        </div>
+        <h3>Базы данных:</h3>
+         <div class="programming_languages">
+            <p><img src="/images/mysql.png" alt="html">MySQL</p>
+            <p><img src="/images/azure.png" alt="html">Azure</p>
+        </div>
+        <h3>Дополнительные знания:</h3>
+         <div class="programming_languages">
+            <p><img src="/images/c_sharp.png" alt="html">C#</p>
+            <p><img src="/images/xamarin.png" alt="html">Xamarin</p>
+            <p><img src="/images/photoshop.png" alt="html">Photoshop</p>
+            <p><img src="/images/figma.png" alt="html">Figma</p>
+        </div>
+           <h3>Резюме:</h3>
+         <div class="summary">
+            <a href="/files/summary.pdf" download>
+                <img src="/images/pdf.png" alt="">
+                <p>Скачать резюме</p>
+            </a>
+        </div>
+    </section>
  </main>
  <footer>
  	<div class="left">
@@ -19,6 +87,7 @@
  		<a href="tel: +79857002772" class="footer_regular"><i class="fa fa-phone" aria-hidden="true"></i>+79857002772</a>
  		<a href="mailto: prusov-official@yandex.ru" class="footer_regular"><i class="fa fa-envelope-o" aria-hidden="true"></i>prusov-official@yandex.ru</a>
  		<a href="https://t.me/nikita_qwerty" class="footer_regular"><i class="fa fa-telegram" aria-hidden="true"></i>@nikita_qwerty</a>
+        <a href="https://vk.com/nik_prusov" class="footer_regular"><i class="fa fa-vk" aria-hidden="true"></i>Никита Прусов</a>
  	</div>
  	<div class="right">©2021 Prusov-Code</div>
  </footer>
