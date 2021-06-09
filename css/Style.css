@@ -154,11 +154,7 @@ header .bottom .nav a:hover::after {
   left: 0; 
 }
 /*Main part*/
-.technical_part {
-	width: 80%;
-	margin:0 auto;
-	text-align: center;
-}
+
 main h1 {
 	font-size: 40px;
 	margin-bottom: 50px;
@@ -172,9 +168,10 @@ main h3 {
 main .intro {
 	height: calc(100vh - 154px);
 	display: flex;
+	width: 100%!important;
 	align-items: center;
 	position: relative;
-	margin: 0!important;
+	margin: 0 auto!important;
 	flex-direction: column;
 	justify-content: center;
 }
@@ -276,7 +273,7 @@ main .principles {
 /*Works*/
 main .works {
 	text-align: center;
-	width: 80%;
+		width: 100%;
 	margin: 0 auto;
 }
 main .works .items {
@@ -353,9 +350,15 @@ main .works .items .item .button_block .background {
   animation: animateborder 3s ease infinite;
 }
 /*Technical part, summary*/
+.technical_part {
+	width: 100%;
+	margin:0 auto;
+	text-align: center;
+}
 main .technical_part .programming_languages {
 	display: flex;
 	align-items: center;
+		flex-wrap: wrap;
 	position: relative;
 	background: black;
 	justify-content: center;
@@ -389,7 +392,7 @@ main .technical_part .programming_languages p {
 	position: relative;
 	/*-webkit-animation:jump 4s ease-in-out infinite;
 	animation:jump 4s ease-in-out infinite;*/
-	margin: 20px 30px;
+	margin: 10px 30px;
 	font-size: 20px;
 	align-items: center;
 }
@@ -426,6 +429,7 @@ section {
 }
 /*Contacts*/
 main .contacts {
+	width: 100%;
 	text-align: center;
 	padding-bottom: 100px;
 }
@@ -433,6 +437,7 @@ main .contacts .contacts_inner {
 	display: flex;
 	align-items: center;
 	margin-top: 40px;
+	flex-wrap: wrap;
 	justify-content: center;
 }
 main .contacts .contacts_inner a {
@@ -452,10 +457,11 @@ main .contacts .contacts_inner a i {
 footer {
 	width: 80%;
 	height: 200px;
-	padding-bottom: 20px;
+	padding-bottom: 30px;
 	margin: 0 auto;
+	margin-top: 40px;
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: space-between;
 }
 footer .left {
@@ -464,6 +470,9 @@ footer .left {
 }
 footer .left p {
 	font-size: 25px;
+}
+footer .left .footer_title {
+	margin-top: 0;
 }
 footer .left a {
 	display: flex;
@@ -478,6 +487,9 @@ footer .left a:nth-child(2) {
 }
 footer .left a i {
 	margin-right: 6px;
+}
+footer .right p {
+	margin: 0;
 }
 footer .right .footer_flags {
 	display: flex;
@@ -494,6 +506,10 @@ footer .right .footer_flags img:hover {
 }
 footer .right .footer_flags img:nth-child(1) {
 	margin-right: 20px;
+}
+section {
+	width: 80%!important;
+	margin: 0 auto!important;
 }
 /*Scroll to top button*/
 #scroll_top {
@@ -521,6 +537,9 @@ footer .right .footer_flags img:nth-child(1) {
 	header .bottom{
 		width: 90%;
 	}
+	.works {
+		width: 100%;
+	}
 }
 @media(max-width: 1080px) {
 	header .bottom {
@@ -530,5 +549,67 @@ footer .right .footer_flags img:nth-child(1) {
 @media(max-width: 950px) {
 	header {
 		width: 100%;
+	}
+}
+@media(max-width: 1130px) {
+	section {
+		width: 90%!important;
+	}
+}
+@media(max-width: 550px) {
+	footer {
+		width: 90%;
+	}
+		.programming_languages {
+		flex-wrap: nowrap;
+		flex-direction: column;
+	}
+}
+@media(max-width: 450px) {
+	footer {
+		width: 95%;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding-bottom: 90px;
+		text-align: center;
+	}
+	footer .left a {
+		justify-content: center;
+	}
+	footer .right {
+		margin-top: 30px;
+	}
+	footer .right .footer_flags {
+		justify-content: center;
+	}
+}
+@media(max-width: 840px) {
+	header .bottom {
+		display: none;
+	}
+}
+@media(max-width: 630px) {
+	header .bottom {
+		display: none;
+	}
+}
+@media(max-width: 670px) {
+	main .intro h1 {
+    font-size: 67px;
+	}
+	main h3 {
+		font-size: 17px;
+	}
+}
+@media(max-width: 420px) {
+	main .intro h1 {
+    font-size: 51px;
+	}
+	main h3 {
+		font-size: 13px;
+	}
+	header .top h1 {
+		    font-size: 39px;
 	}
 }
