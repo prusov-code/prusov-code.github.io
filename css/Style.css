@@ -69,11 +69,28 @@ header .top h1 {
 header .top h1 span {
 	margin-right: 10px;
 	font-size: 40px;
-	animation: blur .75s ease-out infinite;
+	/*animation: blur .75s ease-out infinite;*/
 	padding: 5px 10px;
 	background: white;
 	color: black;
 	border-radius: 4px;
+}
+
+header .bottom {
+	width: 80%;
+	margin-top: 15px;
+	position: relative;
+}
+header .bottom .flags {
+	display: flex;
+ position: absolute; 
+ top: -90%;
+ left: calc(100% - 100px);
+}
+header .bottom .flags img{
+	width: 30px;
+	transition: 0.3s;
+	cursor: pointer;
 }
 @keyframes blur {
   from {
@@ -96,22 +113,6 @@ header .top h1 span {
       0px -10px 100px #7B96B8,
       0px -10px 100px #7B96B8;
   }
-}
-header .bottom {
-	width: 80%;
-	margin-top: 15px;
-	position: relative;
-}
-header .bottom .flags {
-	display: flex;
- position: absolute; 
- top: -90%;
- left: calc(100% - 100px);
-}
-header .bottom .flags img{
-	width: 30px;
-	transition: 0.3s;
-	cursor: pointer;
 }
 header .bottom .flags img:hover {
 	transform: scale(1.2);
@@ -555,6 +556,12 @@ section {
 	section {
 		width: 90%!important;
 	}
+	@-webkit-keyframes blur {
+ 50% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+}
+@keyframes blur {
+ 50% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 20px #ffd, 0 0 20px #fff; }
+}
 }
 @media(max-width: 550px) {
 	footer {
