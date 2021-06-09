@@ -3,6 +3,28 @@ body {
 	color: white;
 	font-family: 'Norms';
 }
+  p,h1,h2,h3,a,span,button {
+      /**
+       * Для эксплорера
+       */
+      -ms-user-select: none;
+
+      /**
+       * Для мозилы
+       */
+      -moz-user-select: none;
+
+      /**
+       * Для конкверора
+       */
+      -khtml-user-select: none;
+
+      /**
+       * Для Сафари и Хрома
+       */
+       -webkit-user-select: none;
+}
+img {moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;}
 @font-face {
   font-family: 'Norms'; 
   src: url(/fonts/TTNorms-Bold.ttf); 
@@ -25,13 +47,33 @@ header {
 	display: flex;
 	flex-direction: column;
 	width: 80%;
+	height: 154px;
 	margin: 0 auto;
 	align-items: center;
 	justify-content: center;
 }
+header .top {
+	width: 100%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
 header .top h1 {
   animation: blur .75s ease-out infinite;
+  margin: 0;
+  font-size: 50px;
   text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+header .top h1 span {
+	margin-right: 10px;
+	font-size: 40px;
+	animation: blur .75s ease-out infinite;
+	padding: 5px 10px;
+	background: white;
+	color: black;
+	border-radius: 4px;
 }
 @keyframes blur {
   from {
@@ -56,15 +98,33 @@ header .top h1 {
   }
 }
 header .bottom {
-	width: 100%;
-	margin-top: 20px;
+	width: 80%;
+	margin-top: 15px;
+	position: relative;
+}
+header .bottom .flags {
+	display: flex;
+ position: absolute; 
+ top: -90%;
+ left: calc(100% - 100px);
+}
+header .bottom .flags img{
+	width: 30px;
+	transition: 0.3s;
+	cursor: pointer;
+}
+header .bottom .flags img:hover {
+	transform: scale(1.2);
+}
+header .bottom .flags img:nth-child(1) {
+	margin-right: 20px;
 }
 header .bottom .nav {
  margin: 0 auto;
  padding: 0;
  list-style: none;
  display: flex;
- width: 80%;
+ width: 100%;
  font-size: 20px;
  justify-content: space-between;
 }
@@ -80,10 +140,12 @@ header .bottom .nav a::after {
   bottom: 0;
   left: 50%;
   display: block;
-  background: none repeat scroll 0 0 transparent;
+  
   height: 2px;
   width: 0;
-  background: #fff;
+   background-image: linear-gradient(45deg,#f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  background-size: 200%;
+  animation: animateborder 3s ease infinite;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
 }
 
@@ -106,39 +168,236 @@ main h3 {
 	margin-top: 40px;
 	margin-bottom: 10px;
 }
-main .contacts {
-	text-align: center;
-}
-main .contacts .contacts_inner {
+/*Intro*/
+main .intro {
+	height: calc(100vh - 154px);
 	display: flex;
 	align-items: center;
-	margin-top: 40px;
+	position: relative;
+	margin: 0!important;
+	flex-direction: column;
 	justify-content: center;
 }
-main .contacts .contacts_inner a {
+main .intro .canvas_block {
+	position: absolute;
+	z-index: -10;
+	width: 100%;
+	position: absolute;
+	height: 100%;
+}
+main .intro .canvas_block .shadow{
+	position: absolute;
+	background: black;
+	width: 100%;
+	height: 100%;
+	opacity: 0.4;
+}
+main .intro .canvas_block canvas {
+	    height: calc(100vh - 154px);
+    width: 100%;
+    z-index: -12;
+}
+main .intro h1, main .intro h3 {
+	margin: 0;
+}
+main .intro h1 {
+	font-size: 100px;
+}
+.indicator {
+	cursor: pointer;
+	position: relative;
+	width: 50px;
+	height: 50px;
+	margin-top: 70px;
+	transform: rotate(45deg);
+}
+.indicator span {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	border: none;
+	border-image: linear-gradient(45deg
+,#f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+	border-image-slice: 1;
+	border-bottom: 3px solid;
+	border-right: 3px solid;
+	animation: animate 1s linear infinite;
+}
+.indicator span:nth-child(1) {
+	top: -30px;
+	left: -30px;
+	animation-delay: 0s;
+}
+
+.indicator span:nth-child(2) {
+	top: -15px;
+	left: -15px;
+	animation-delay: 0.2s;
+}
+
+.indicator span:nth-child(3) {
+	top: 0;
+	left: 0;
+	animation-delay: 0.4s;
+}
+
+.indicator span:nth-child(4) {
+	top: 15px;
+	left: 15px;
+	animation-delay: 0.6s;
+}
+
+.indicator span:nth-child(5) {
+	top: 30px;
+	left: 30px;
+	animation-delay: 0.8s;
+}
+
+@keyframes animate {
+	0% {
+		transform: translate(0, 0); 
+	}
+
+	20% {
+		transform: translate(15px, 15px);
+	}
+}
+/*About_me*/
+main .about_me {
+	text-align: center;
+}
+/*Principles*/
+main .principles {
+	text-align: center;
+}
+/*Works*/
+main .works {
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+}
+main .works .items {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	align-items: center;
+}
+main .works .items .item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 17px;
+	margin: 20px 30px;
+	justify-content: center;
+}
+main .works .items .item .img_block {
+	width: 300px;
+	height: fit-content;
+	position: relative;
+}
+main .works .items .item .img_block .shadow {
+	opacity: 0.4;
+	background: black;
+	top: 0%;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	position: absolute;
+}
+main .works .items .item .img_block img {
+	width: 300px;
+}
+main .works .items .item .button_block  {
+	position: relative;
+		margin-top: 30px;
+}
+main .works .items .item .button_block button {
+	display: flex;
+	border: 0;
+	cursor: pointer;
+	align-items: center;
+	position: relative;
+	background: black;
+	justify-content: center;
 	font-size: 20px;
 	color: white;
-	margin: 10px 30px;
-	text-decoration: none;
-	cursor: pointer;
+	width: 200px;
+	z-index: 999;
+	transition: 0.3s;
+	padding: 10px 15px;
 }
-main .contacts .contacts_inner a i {
-	margin-right: 6px;
-	font-size: 25px;
+main .works .items .item button:hover {
+	transform: scale(1.1);
 }
+main .works .items .item button:hover +.background{
+	transform: scale(1.1);
+}
+.button_block {
+	width: 200px;
+}
+main .works .items .item .button_block .background {
+		 content:'';
+  position: absolute;
+  z-index: -2;
+  top: -.125em;
+  left: -.125em;
+  width: calc(100% + .25em);
+  height: calc(100% + .25em);
+  border-radius: .25em;
+  	transition: 0.3s;
+  background-image: linear-gradient(45deg,#f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  background-size: 200%;
+  animation: animateborder 3s ease infinite;
+}
+/*Technical part, summary*/
 main .technical_part .programming_languages {
 	display: flex;
 	align-items: center;
+	position: relative;
+	background: black;
 	justify-content: center;
+}
+main .technical_part .programming_languages:after {
+	 content:'';
+  position: absolute;
+  z-index: -1;
+  top: -.125em;
+  left: -.125em;
+  width: calc(100% + .25em);
+  height: calc(100% + .25em);
+  border-radius: .25em;
+  background-image: linear-gradient(45deg,#f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  background-size: 200%;
+  animation: animateborder 3s ease infinite;
+}
+@keyframes animateborder {
+    0% {
+        background-position: 0%;
+    }
+    50% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: 0%;
+    }
 }
 main .technical_part .programming_languages p {
 	display: flex;
+	position: relative;
+	/*-webkit-animation:jump 4s ease-in-out infinite;
+	animation:jump 4s ease-in-out infinite;*/
 	margin: 20px 30px;
 	font-size: 20px;
 	align-items: center;
 }
+/*main .technical_part .programming_languages p:nth-child(2n) {
+		-webkit-animation:jump 3s ease-in-out infinite;
+	animation:jump 3s ease-in-out infinite;
+}*/
+.puls{-webkit-animation:puls 3s ease-in-out infinite;animation:puls 3s ease-in-out infinite}.bounce{-webkit-animation:bounce 4s ease-in-out infinite;animation:bounce 4s ease-in-out infinite}.play-rotate{-webkit-animation:play-rotate 3s infinite;animation:play-rotate 3s infinite}.bg-animation{-webkit-animation:bg-animation 25s ease-in-out infinite;animation:bg-animation 25s ease-in-out infinite}@-webkit-keyframes jump{0%{top:10px}50%{top:-10px}100%{top:10px}}@keyframes jump{0%{top:10px}50%{top:-10px}100%{top:10px}}
 main .technical_part .programming_languages img{
 	width: 30px;
 	margin-right: 6px;
@@ -164,6 +423,30 @@ main .technical_part .summary img{
 }
 section {
 	margin-top: 60px!important;
+}
+/*Contacts*/
+main .contacts {
+	text-align: center;
+	padding-bottom: 100px;
+}
+main .contacts .contacts_inner {
+	display: flex;
+	align-items: center;
+	margin-top: 40px;
+	justify-content: center;
+}
+main .contacts .contacts_inner a {
+	display: flex;
+	align-items: center;
+	font-size: 20px;
+	color: white;
+	margin: 10px 30px;
+	text-decoration: none;
+	cursor: pointer;
+}
+main .contacts .contacts_inner a i {
+	margin-right: 6px;
+	font-size: 25px;
 }
 /*Footer*/
 footer {
@@ -196,6 +479,22 @@ footer .left a:nth-child(2) {
 footer .left a i {
 	margin-right: 6px;
 }
+footer .right .footer_flags {
+	display: flex;
+	margin-top: 30px;
+	justify-content: flex-end;
+}
+footer .right .footer_flags img{
+	width: 30px;
+	transition: 0.3s;
+	cursor: pointer;
+}
+footer .right .footer_flags img:hover {
+	transform: scale(1.2);
+}
+footer .right .footer_flags img:nth-child(1) {
+	margin-right: 20px;
+}
 /*Scroll to top button*/
 #scroll_top {
 	display: none;
@@ -214,4 +513,22 @@ footer .left a i {
 #scroll_top:hover {
  	opacity: 1;
  	transform: scale(1.1);
+}
+@media(max-width: 1400px) {
+	header {
+		width: 90%;
+	}
+	header .bottom{
+		width: 90%;
+	}
+}
+@media(max-width: 1080px) {
+	header .bottom {
+		width: 100%;
+	}
+}
+@media(max-width: 950px) {
+	header {
+		width: 100%;
+	}
 }
