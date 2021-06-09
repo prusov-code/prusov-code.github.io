@@ -2,6 +2,8 @@
 <html>
 <head>
 	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<link rel="stylesheet" type="text/css" href="/css/Style.css">
 	<title>Prusov-Code | Разработка сайтов под ключ | Full-stack web developer Nikita Prusov</title>
 	<script src="https://kit.fontawesome.com/d4ecae1147.js" crossorigin="anonymous"></script>
@@ -13,25 +15,176 @@
     <script src="/js/smoth_scroll.js" defer></script>
     <script src="/js/scroll_to_top.js" defer></script>
     <script src="/js/libs/smooth_scroll_plugin.js" defer></script>
+    <script src="/js/language_change.js" defer></script>
 </head>
 <body>
  <a id="scroll_top" title="Наверх"></a>
  <header>
  	<div class="top">
- 		<h1>Prusov-code</h1>
+ 		<h1><span>P</span>Prusov-code</h1>
  	</div>
  	<div class="bottom">
+        <div class="flags">
+            <img class="english_language" src="/images/icons/flag.png" title="English language">
+            <img class="russian_language" src="/images/icons/flag2.png" title="Русский язык">
+        </div>
  		<ul class="nav">
- 			<a href="#"><li>Обо мне</li></a>
- 			<a href="#"><li>Принципы работы</li></a>
- 			<a href="#"><li>Работы</li></a>
- 			<a href="#"><li>Контакты</li></a>
+ 			<a href="#about_me"><li>Обо мне</li></a>
+ 			<a href="#principles"><li>Принципы работы</li></a>
+ 			<a href="#works"><li>Работы</li></a>
  			<a href="#technical_part"><li>Технический раздел</li></a>
+            <a href="#contacts"><li>Контакты</li></a>
  		</ul>
  	</div>
  </header>
  <main>
- 	<section class="contacts">
+    <section class="intro" id="intro">
+            <div class="canvas_block">
+                <div class="shadow"></div>
+           <canvas id="q" width="1920"></canvas><script class="cssdeck">
+var s = window.screen;
+var width = q.width = s.width;
+var height = q.height = s.height;
+var letters = Array(256).join(1).split('');
+function getRandomFloat(min, max) {
+  return Math.random() * (max - min) + min;
+}
+var words_color=Math.round(getRandomFloat(1, 4));
+console.log(words_color); 
+var draw = function () {
+q.getContext('2d').fillStyle='rgba(0,0,0,.05)';
+q.getContext('2d').fillRect(0,0,width,height);  
+switch(words_color) {
+    case 1: {q.getContext('2d').fillStyle='white'; break;}
+    case 2: {q.getContext('2d').fillStyle='#0F0'; break;}
+    case 3: {q.getContext('2d').fillStyle='#8b00ff'; break;}
+    case 4: {q.getContext('2d').fillStyle='#008c8c'; break;} 
+}
+letters.map(function(y_pos, index){
+text = String.fromCharCode(3e4+Math.random()*33);
+x_pos = index * 10;
+q.getContext('2d').fillText(text, x_pos, y_pos);
+letters[index] = (y_pos > 758 + Math.random() * 1e4) ? 0 : y_pos + 10;
+});
+};
+setInterval(draw, 33);</script>
+    </div>
+         <h1>Prusov-code</h1>
+         <h3>Разработка, ведение и продвижение сайтов</h3>
+         <a href="#about_me" class="indicator">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+           <span></span>
+        </a>
+    </section>
+    <section class="about_me" id="about_me">
+         <h1>Обо мне</h1>
+    </section>
+    <section class="principles" id="principles">
+         <h1>Принципы работы</h1>
+    </section>
+    <section id="works" class="works">
+        <h1>Работы</h1>
+        <div class="items">
+            <div class="item">
+                <p>Клиника "Придворный лекарь"</p>
+                <div class="img_block">
+                    <div class="shadow"></div>
+                    <img src="/images/works/leibmedic.PNG">
+                </div>
+                <div class="button_block">
+                    <button>Подробнее</button>
+                    <div class="background"></div>
+                </div>
+            </div>
+            <div class="item">
+                <p>Учебный центр "Древо Познаний"</p>
+                <div class="img_block">
+                    <div class="shadow"></div>
+                    <img src="/images/works/drevo.PNG">
+                </div>
+                <div class="button_block">
+                    <button>Подробнее</button>
+                    <div class="background"></div>
+                </div>
+            </div>
+             <div class="item">
+                <p>Онлайн сервис "Soundify"</p>
+                <div class="img_block">
+                    <div class="shadow"></div>
+                    <img src="/images/works/soundify.PNG">
+                </div>
+                <div class="button_block">
+                    <button>Подробнее</button>
+                    <div class="background"></div>
+                </div>
+            </div>
+            <div class="item">
+                <p>Строительная компания "Глобал строй"</p>
+                <div class="img_block">
+                    <div class="shadow"></div>
+                    <img src="/images/works/global.PNG">
+                </div>
+               <div class="button_block">
+                    <button>Подробнее</button>
+                    <div class="background"></div>
+                </div>
+            </div>
+             <div class="item">
+                <p>Художник Светлана Прусова</p>
+                <div class="img_block">
+                    <div class="shadow"></div>
+                    <img src="/images/works/svetlana.PNG">
+                </div>
+                <div class="button_block">
+                    <button>Подробнее</button>
+                    <div class="background"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="technical_part" class="technical_part">
+        <h1>Технический раздел</h1>
+        <h3>Основной стек:</h3>
+        <div class="programming_languages">
+            <p><img src="/images/icons/html_icon2.png" alt="html">HTML</p>
+            <p><img src="/images/icons/xml.png" alt="html">XML</p>
+            <p><img src="/images/icons/css.png" alt="css">CSS</p>
+            <p><img src="/images/icons/js.png" alt="js">JavaScript</p>
+            <p><img src="/images/icons/php.png" alt="html">PHP</p>
+            <p><img src="/images/icons/sql.png" alt="html">SQL</p>
+        </div>
+        <h3>Фреймворки, библиотеки и другие технологии:</h3>
+        <div class="programming_languages">
+            <p><img src="/images/icons/laravel.png" alt="html">Laravel</p>
+            <p><img src="/images/icons/redbeanphp.png" alt="html">RedBeanPHP</p>
+            <p><img src="/images/icons/jquery.png" alt="html">Jquery</p>
+            <p><img src="/images/icons/sass.png" alt="html">Sass</p>
+            <p><img src="/images/icons/less.png" alt="html">Less</p>
+        </div>
+        <h3>Базы данных:</h3>
+         <div class="programming_languages">
+            <p><img src="/images/icons/mysql.png" alt="html">MySQL</p>
+            <p><img src="/images/icons/azure.png" alt="html">Azure</p>
+        </div>
+        <h3>Дополнительные знания:</h3>
+         <div class="programming_languages">
+            <p><img src="/images/icons/c_sharp.png" alt="html">C#</p>
+            <p><img src="/images/icons/xamarin.png" alt="html">Xamarin</p>
+            <p><img src="/images/icons/photoshop.png" alt="html">Photoshop</p>
+            <p><img src="/images/icons/figma.png" alt="html">Figma</p>
+        </div>
+           <h3>Резюме:</h3>
+         <div class="summary">
+            <a href="/files/summary.pdf" download>
+                <img src="/images/icons/pdf.png" alt="">
+                <p>Скачать резюме</p>
+            </a>
+        </div>
+    </section>
+ 	<section id="contacts" class="contacts">
       <h1>Контакты</h1>
       <h3>Интересуют услуги? Свяжитесь со мной при помощи контактов ниже</h3>  
       <div class="contacts_inner">
@@ -40,45 +193,6 @@
         <a href="https://t.me/nikita_qwerty" class="footer_regular"><i class="fa fa-telegram" aria-hidden="true"></i>@nikita_qwerty</a>
         <a href="https://vk.com/nik_prusov" class="footer_regular"><i class="fa fa-vk" aria-hidden="true"></i>Никита Прусов</a>
       </div>
-    </section>
-    <section id="technical_part" class="technical_part">
-        <h1>Технический раздел</h1>
-        <h3>Основные языки программирования:</h3>
-        <div class="programming_languages">
-            <p><img src="/images/html_icon2.png" alt="html">HTML</p>
-            <p><img src="/images/xml.png" alt="html">XML</p>
-            <p><img src="/images/css.png" alt="css">CSS</p>
-            <p><img src="/images/js.png" alt="js">JavaScript</p>
-            <p><img src="/images/php.png" alt="html">PHP</p>
-            <p><img src="/images/sql.png" alt="html">SQL</p>
-        </div>
-        <h3>Фреймворки, библиотеки и другие технологии:</h3>
-        <div class="programming_languages">
-            <p><img src="/images/laravel.png" alt="html">Laravel</p>
-            <p><img src="/images/redbeanphp.png" alt="html">RedBeanPHP</p>
-            <p><img src="/images/jquery.png" alt="html">Jquery</p>
-            <p><img src="/images/sass.png" alt="html">Sass</p>
-            <p><img src="/images/less.png" alt="html">Less</p>
-        </div>
-        <h3>Базы данных:</h3>
-         <div class="programming_languages">
-            <p><img src="/images/mysql.png" alt="html">MySQL</p>
-            <p><img src="/images/azure.png" alt="html">Azure</p>
-        </div>
-        <h3>Дополнительные знания:</h3>
-         <div class="programming_languages">
-            <p><img src="/images/c_sharp.png" alt="html">C#</p>
-            <p><img src="/images/xamarin.png" alt="html">Xamarin</p>
-            <p><img src="/images/photoshop.png" alt="html">Photoshop</p>
-            <p><img src="/images/figma.png" alt="html">Figma</p>
-        </div>
-           <h3>Резюме:</h3>
-         <div class="summary">
-            <a href="/files/summary.pdf" download>
-                <img src="/images/pdf.png" alt="">
-                <p>Скачать резюме</p>
-            </a>
-        </div>
     </section>
  </main>
  <footer>
@@ -89,7 +203,13 @@
  		<a href="https://t.me/nikita_qwerty" class="footer_regular"><i class="fa fa-telegram" aria-hidden="true"></i>@nikita_qwerty</a>
         <a href="https://vk.com/nik_prusov" class="footer_regular"><i class="fa fa-vk" aria-hidden="true"></i>Никита Прусов</a>
  	</div>
- 	<div class="right">©2021 Prusov-Code</div>
+ 	<div class="right">
+        <p>©2021 Prusov-Code</p>
+      <div class="footer_flags">
+            <img class="english_language" src="/images/icons/flag.png" title="English language">
+            <img class="russian_language" src="/images/icons/flag2.png" title="Русский язык">
+    </div>
+</div>
  </footer>
 </body>
 </html>
