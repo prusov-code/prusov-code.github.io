@@ -92,7 +92,19 @@ header .bottom .flags img{
 	transition: 0.3s;
 	cursor: pointer;
 }
-
+@media(min-width: 1024px) {
+	@keyframes blur {
+  from {
+    text-shadow:0px 0px 10px #fff,
+      0px 0px 10px #fff, 
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 30px #fff,
+      0px 0px 30px #7B96B8,
+      0px -10px 50px #7B96B8;
+  }
+}
+}
 /*@keyframes blur {
   from {
     text-shadow:0px 0px 10px #fff,
