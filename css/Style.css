@@ -105,6 +105,11 @@ header .bottom .flags img{
   }
 }
 }
+@media(max-width: 1024px) {
+	header .top h1 {
+		text-shadow:0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 0px #fff, 0px 0px 25px #fff, 0px 0px 0px #fff, 0px 0px 30px #7b96b8, 0px -10px 20px #7b96b8
+	}
+}
 /*@keyframes blur {
   from {
     text-shadow:0px 0px 10px #fff,
