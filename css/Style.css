@@ -289,6 +289,39 @@ main .about_me {
 main .principles {
 	text-align: center;
 }
+main .principles .items {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+main .principles .items .item {
+	margin: 20px 30px;
+	display: flex;
+	max-width: 260px;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+main .principles .items .item .title {
+	font-size: 20px;
+}
+main .principles .items .item .img_block {
+		width: 100%;
+			border-radius: 10px;
+				position: relative;
+			display: flex;
+			align-items: center;
+				margin-bottom: 20px;
+			justify-content: center;
+		animation: jump 4s ease-in-out infinite;
+		box-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 0px #fff, 0px 0px 25px #fff, 0px 0px 0px #fff, 0px 0px 30px #7b96b8, 0px -10px 20px #7b96b8;
+}
+main .principles .items .item img {
+	height: 100px;
+	padding: 40px 0px;
+
+}
 /*Works*/
 main .works {
 	text-align: center;
@@ -325,6 +358,7 @@ main .works .items .item .img_block .shadow {
 }
 main .works .items .item .img_block img {
 	width: 300px;
+	border-radius: 10px;
 }
 main .works .items .item .button_block  {
 	position: relative;
@@ -419,7 +453,8 @@ main .technical_part .programming_languages p {
 		-webkit-animation:jump 3s ease-in-out infinite;
 	animation:jump 3s ease-in-out infinite;
 }*/
-.puls{-webkit-animation:puls 3s ease-in-out infinite;animation:puls 3s ease-in-out infinite}.bounce{-webkit-animation:bounce 4s ease-in-out infinite;animation:bounce 4s ease-in-out infinite}.play-rotate{-webkit-animation:play-rotate 3s infinite;animation:play-rotate 3s infinite}.bg-animation{-webkit-animation:bg-animation 25s ease-in-out infinite;animation:bg-animation 25s ease-in-out infinite}@-webkit-keyframes jump{0%{top:10px}50%{top:-10px}100%{top:10px}}@keyframes jump{0%{top:10px}50%{top:-10px}100%{top:10px}}
+@-webkit-keyframes jump{0%{top:10px}50%{top:-10px}100%{top:10px}}
+@keyframes jump{0%{top:10px}50%{top:-10px}100%{top:10px}}
 main .technical_part .programming_languages img{
 	width: 30px;
 	margin-right: 6px;
