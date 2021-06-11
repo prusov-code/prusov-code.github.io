@@ -617,7 +617,7 @@ section {
 	main .intro h1 {
     font-size: 67px;
 	}
-	main h3 {
+	main .intro h3 {
 		font-size: 17px;
 	}
 }
@@ -625,7 +625,7 @@ section {
 	main .intro h1 {
     font-size: 51px;
 	}
-	main h3 {
+	main .intro h3 {
 		font-size: 13px;
 	}
 	header .top h1 {
