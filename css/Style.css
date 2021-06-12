@@ -212,6 +212,7 @@ main .intro .canvas_block .shadow{
 main .intro .canvas_block canvas {
 	    height: calc(100vh - 154px);
     width: 100%;
+    min-height: 440px;
     z-index: -12;
 }
 main .intro h1, main .intro h3 {
