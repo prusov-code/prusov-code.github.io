@@ -189,6 +189,7 @@ main .intro {
 	display: flex;
 	width: 100%!important;
 	align-items: center;
+	min-height: 440px;
 	position: relative;
 	margin: 0 auto!important;
 	flex-direction: column;
