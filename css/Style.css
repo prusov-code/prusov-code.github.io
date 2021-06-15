@@ -286,6 +286,110 @@ main .intro h1 {
 /*About_me*/
 main .about_me {
 	text-align: center;
+	width: 70%!important;
+	margin: 0 auto!imporant;
+	padding-bottom: 20px!important;
+}
+main .about_me .about_inner_block {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: row;
+}
+main .about_me .about_inner_block .text_block {
+	text-align: left;
+	margin-left: 60px;
+}
+main .about_me .about_inner_block .text_block h1 {
+	margin: 10px 0;
+}
+main .about_me .about_inner_block .text_block h2 {
+	margin: 10px 0;
+}
+main .about_me .about_inner_block .text_block p {
+	font-size: 18px;
+	line-height: 20px;
+}
+main .about_me .about_inner_block .img_block {
+	position: relative;
+	height: 300px;
+}
+main .about_me .about_inner_block .img_block img{
+	border-radius: 50%;
+	width: 300px;
+}
+main .about_me .about_inner_block .img_block .background {
+    content: '';
+    position: absolute;
+    z-index: -2;
+     top: 50%;
+ left: 50%;
+   transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    transition: 0.3s;
+        box-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 0px #fff, 0px 0px 25px #fff, 0px 0px 0px #fff, 0px 0px 30px #7b96b8, 0px -10px 20px #7b96b8;
+    background-image: linear-gradient( 45deg, #ffffff, #e6e6e6, #cccccc, #b3b3b3, #999999, #808080, #666666, #4d4d4d);
+    background-size: 200%;
+    animation: animateborder2 10s ease infinite;
+}
+@keyframes animateborder2 {
+	   0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+@media (max-width: 1700px) {
+	main .about_me {
+		width: 80%!important;
+	}
+}
+@media (max-width: 1370px) {
+	main .about_me {
+		width: 80%!important;
+		flex-direction: column;
+	}
+	main .about_me .about_inner_block {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	main .about_me .text_block {
+		margin: 20px 0!important;
+				text-align: center!important;
+
+	}
+}
+@media (max-width: 1200px) { 
+	main .about_me {
+		width: 90%!important;
+	}
+}
+@media (max-width: 725px) { 
+		main .about_me .text_block h1 {
+			font-size: 34px;
+		}
+	main .about_me .text_block h2 {
+		font-size: 21px;
+	}
+	main .about_me .text_block p {
+		font-size: 15px!important	;
+	}
+}
+@media(max-width: 500px) {
+	main .about_me {
+		width: 95%!important;
+	}
+	main .about_me .about_inner_block .img_block {
+		width: 80%;
+		height: auto;
+	}
+	main .about_me .about_inner_block .img_block .background {
+		    top: calc(50% - 3px);
+	}
+	main .about_me .about_inner_block .img_block img {
+		width: 100%;
+	}
 }
 /*Principles*/
 main .principles {
@@ -442,6 +546,9 @@ main .technical_part .programming_languages:after {
         background-position: 0%;
     }
 }
+main .technical_part h3 {
+	margin-bottom: 20px;
+}
 main .technical_part .programming_languages p {
 	display: flex;
 	position: relative;
@@ -481,6 +588,7 @@ main .technical_part .summary img{
  margin-left: -10px;
 }
 section {
+	padding-top: 15px;
 	margin-top: 60px!important;
 }
 /*Contacts*/
