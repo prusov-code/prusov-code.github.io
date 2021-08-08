@@ -1,6 +1,7 @@
 body {
 	background: black;
 	color: white;
+	margin: 0;
 	font-family: 'Norms';
 }
   p,h1,h2,h3,a,span,button {
@@ -693,6 +694,63 @@ section {
 #scroll_top:hover {
  	opacity: 1;
  	transform: scale(1.1);
+}
+/*Popup website info*/
+.website_info_popup {
+	display: none;
+	position: fixed;
+	z-index: 10003;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+}
+.website_info_popup .inner {
+z-index: 10004;
+position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+    transform: translate(-50%, -50%);
+width: 80%;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+.website_info_popup  .popup_exit_button {
+    position: absolute;
+    color: white;
+    z-index: 10004;
+    cursor: pointer;
+    margin: 0;
+    top: 5%;
+    left: 95%;
+    font-size: 25px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid white;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+.website_info_popup  .popup_exit_button:hover {
+	transform: scale(1.1);
+}
+.website_info_popup .inner iframe {
+	border: 0;
+ height: 80vh;
+}
+.website_info_popup_leibmedic .inner iframe html body {
+	background: white;overflow-x:hidden
+}
+.website_info_popup .shadow {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 10001;
+	height: 100vh;
+	background: black;
+	opacity: 0.5;
 }
 @media(max-width: 1400px) {
 	header {
