@@ -18,8 +18,18 @@
     <script src="/js/scroll_to_top.js" defer></script>
     <script src="/js/libs/smooth_scroll_plugin.js" defer></script>
     <script src="/js/language_change.js" defer></script>
+    <script src="/js/popup_website_info.js" defer></script>
 </head>
 <body>
+    <iframe src="images/mr_robot.mp3" allow="autoplay" style="display:none" id="iframeAudio"> </iframe>
+    <div class="website_info_popup website_info_popup_leibmedic">
+        <div class="inner">
+            <p>Клиника "Придворный лекарь"</p>
+            <iframe style="background: white;" width="100%" height="80vh" src="https://leibmedic.ru/" name="iframe" scrolling="auto"></iframe>
+        </div>
+        <p class="popup_exit_button">X</p>
+        <div class="shadow"></div>
+    </div>
  <a id="scroll_top" title="Наверх"></a>
  <header>
  	<div class="top">
@@ -132,7 +142,7 @@ setInterval(draw, 33);</script>
                     <img src="/images/works/leibmedic.PNG">
                 </div>
                 <div class="button_block">
-                    <button>Подробнее</button>
+                    <button class="open_popup leibmedic">Подробнее</button>
                     <div class="background"></div>
                 </div>
             </div>
@@ -143,7 +153,7 @@ setInterval(draw, 33);</script>
                     <img src="/images/works/drevo.PNG">
                 </div>
                 <div class="button_block">
-                    <button>Подробнее</button>
+                    <button class="open_popup drevo">Подробнее</button>
                     <div class="background"></div>
                 </div>
             </div>
@@ -154,7 +164,7 @@ setInterval(draw, 33);</script>
                     <img src="/images/works/soundify.PNG">
                 </div>
                 <div class="button_block">
-                    <button>Подробнее</button>
+                    <button class="open_popup soundify">Подробнее</button>
                     <div class="background"></div>
                 </div>
             </div>
@@ -165,7 +175,7 @@ setInterval(draw, 33);</script>
                     <img src="/images/works/global.PNG">
                 </div>
                <div class="button_block">
-                    <button>Подробнее</button>
+                    <button class="open_popup global-stroy">Подробнее</button>
                     <div class="background"></div>
                 </div>
             </div>
@@ -176,7 +186,7 @@ setInterval(draw, 33);</script>
                     <img src="/images/works/svetlana.PNG">
                 </div>
                 <div class="button_block">
-                    <button>Подробнее</button>
+                    <button class="open_popup prusova">Подробнее</button>
                     <div class="background"></div>
                 </div>
             </div>
