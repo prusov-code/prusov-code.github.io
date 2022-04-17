@@ -76,7 +76,21 @@ header .top h1 span {
 	color: black;
 	border-radius: 4px;
 }
-
+header .top .mobile_flags {
+	margin-bottom: 10px;
+	display: none;
+}
+header .top .mobile_flags img{
+	width: 38px;
+	transition: 0.3s;
+	cursor: pointer;
+}
+header .top .mobile_flags img:first-child {
+	margin-right: 10px;
+}
+header .top .mobile_flags img:hover {
+	transform: scale(1.1);
+}
 header .bottom {
 	width: 80%;
 	margin-top: 15px;
@@ -172,6 +186,99 @@ header .bottom .nav a::after {
 header .bottom .nav a:hover::after { 
   width: 100%; 
   left: 0; 
+}
+/*Mobile menu*/
+.menu-tab {
+  width: 75px;
+  height: 70px;
+  position: fixed;
+  z-index: 110;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  transition: all 0.6s ease-in-out;
+  /*end of div*/
+}
+.menu-tab div {
+  width: 33px;
+  height: 4px;
+  background-color: white;
+  display: block;
+  margin: 5px 19px;
+  transition: all 0.6s ease-in-out;
+}
+.menu-tab div:nth-child(1) {
+  margin-top: 20px;
+}
+
+/*end of menu-tab*/
+.menu-tab.active {
+  left: 345px;
+  transition: all 600ms ease-in-out;
+  background-color: rgb(34 30 30 / 57%);
+}
+.menu-tab.active #one {
+  transform: translateY(9px) rotate(-135deg);
+  transition: all 0.6s ease-in-out;
+  background-color: white;
+}
+.menu-tab.active #two {
+  opacity: 0;
+  transition: 0.4s ease;
+}
+.menu-tab.active #three {
+  transform: translateY(-9px) rotate(-45deg);
+  transition: all 0.6s ease-in-out;
+  background-color: white;
+}
+
+.menu-hide {
+  width: 345px;
+  left: -345px;
+  height: 100vh;
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  transition: all 0.6s ease-in-out;
+  /*end of nav*/
+}
+.menu-hide nav {
+  /*end of ul*/
+}
+.menu-hide nav ul {
+  /*end of li*/
+  padding: 0;
+}
+.menu-hide nav ul a {
+	color: white;
+	text-decoration: none;
+}
+.menu-hide nav ul li {
+  height: 70px;
+  list-style-type: none;
+  text-align: left;
+  font-size: 20px;
+  line-height: 70px;
+  padding-left: 10px;
+  color: white;
+  transition: all 0.5s ease;
+}
+.menu-hide nav ul li:hover {
+  background-color: #ca0cf957;
+  transition: all 0.5s ease;
+}
+.menu-hide nav ul li a {
+  padding: 30px 25px;
+  text-decoration: none;
+  color: #f1f1f1;
+  font-weight: 800;
+}
+
+/*end of menu-hide*/
+.menu-hide.show {
+  left: 0px;
+  background-color: rgb(0 0 0 / 87%);
+  transition: all 0.6s ease-in-out;
 }
 /*Main part*/
 
@@ -393,6 +500,14 @@ main .about_me .about_inner_block .img_block .background {
 		width: 100%;
 	}
 }
+@media(max-width: 417px) {
+	.menu-hide.show {
+		width: 100%;
+	}
+	.menu-tab.active {
+     left: calc(100% - 75px);
+  }
+}
 /*Principles*/
 main .principles {
 	text-align: center;
@@ -461,7 +576,7 @@ main .works .items .item .img_block .shadow {
 	top: 0%;
 	width: 100%;
 	height: 100%;
-	z-index: 9999;
+	z-index:10;
 	position: absolute;
 }
 main .works .items .item .img_block img {
@@ -483,7 +598,6 @@ main .works .items .item .button_block button {
 	font-size: 20px;
 	color: white;
 	width: 200px;
-	z-index: 999;
 	transition: 0.3s;
 	padding: 10px 15px;
 }
@@ -810,6 +924,12 @@ align-items: center;
 @media(max-width: 840px) {
 	header .bottom {
 		display: none;
+	}
+	header .top {
+		flex-direction: column;
+	}
+	header .top .mobile_flags {
+		display: flex;
 	}
 }
 @media(max-width: 630px) {
