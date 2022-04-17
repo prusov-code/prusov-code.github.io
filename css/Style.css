@@ -238,8 +238,9 @@ main .intro h1 {
 	height: 100%;
 	box-sizing: border-box;
 	border: none;
-	border-image: linear-gradient(45deg
-,#f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+	/*border-image: linear-gradient(45deg
+,#f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);*/
+  border-image: linear-gradient(45deg,#ffffff, #c3ada8, #978b8e, #625664, #ba04ff, #978b8e, #c3ada8, #ffffff);
 	border-image-slice: 1;
 	border-bottom: 3px solid;
 	border-right: 3px solid;
