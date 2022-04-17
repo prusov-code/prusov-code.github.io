@@ -29,7 +29,7 @@ $('.english_language').on('click',function () {
 		    $('.contacts>h3').slideDown();
 		     $('section>h1').eq(1).text('About me');
 		     $('section>h1').eq(2).text('Work principles');
-		     $('section>h1').eq(3).text('My works');
+		     $('section>h1').eq(3).text('Portfolio');
  		     $('section>h1').eq(4).text('Technical information');
      	     for(var i=1;i<4;i++) {
 			     $('section>h1').eq(i).slideDown();
@@ -63,7 +63,7 @@ $('.russian_language').on('click',function () {
 	     }
  	        $('.summary>a>p').slideUp();
 		setTimeout(function() {
-	  		$('.nav').html('<a href="#about_me"><li>Обо мне</li></a><a href="#principles"><li>Принципы работы</li></a><a href="#works"><li>Работы</li></a><a href="#technical_part"><li>Технический раздел</li></a><a href="#contacts"><li>Контакты</li></a>');
+	  		$('.nav').html('<a href="#about_me"><li>Обо мне</li></a><a href="#principles"><li>Принципы работы</li></a><a href="#works"><li>Портфолио</li></a><a href="#technical_part"><li>Технический раздел</li></a><a href="#contacts"><li>Контакты</li></a>');
 	  		$('.nav').slideDown();
 			$('.intro>h3').text('Разработка, ведение и продвижение сайтов');
 			$('.intro>h3').slideDown();
@@ -77,7 +77,7 @@ $('.russian_language').on('click',function () {
 		    $('.contacts>h3').slideDown();
 		     $('section>h1').eq(1).text('Обо мне');
 		     $('section>h1').eq(2).text('Принципы работы');
-		     $('section>h1').eq(3).text('Работы');
+		     $('section>h1').eq(3).text('Портфолио');
  		     $('section>h1').eq(4).text('Технический раздел');
      	     for(var i=1;i<4;i++) {
 			     $('section>h1').eq(i).slideDown();
