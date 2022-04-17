@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<link rel="stylesheet" type="text/css" href="/css/Style.css">
-	<title>Prusov-Code | Разработка сайтов под ключ | Никита Прусов - Full stack веб разработчик | Full-stack web developer Nikita Prusov </title>
+	<title>Prusov-Code | Разработка сайтов под ключ | Никита Прусов - full-stack веб разработчик</title>
     <meta name="description" content="Необходимо разработать качественный сайт? Вы попали точно по адресу. Это сайт портфолио веб-разработчика Прусова Никиты. Здесь вы можете изучить завершенные работы и почитать о моих принципах работы, а также найти контакты для связи со мной">
 	<script src="https://kit.fontawesome.com/d4ecae1147.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="/images/icons/favicon.ico">
@@ -18,6 +18,7 @@
     <script src="/js/scroll_to_top.js" defer></script>
     <script src="/js/libs/smooth_scroll_plugin.js" defer></script>
     <script src="/js/language_change.js" defer></script>
+    <script src="/js/popup_website_info.js" defer></script>
     <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -32,12 +33,12 @@
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/88406005" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
-    <script src="/js/popup_website_info.js" defer></script>
 </head>
 <body>
-    <div class="website_info_popup">
+    <div class="website_info_popup website_info_popup_leibmedic">
         <div class="inner">
             <p>Клиника "Придворный лекарь"</p>
+            <iframe style="background: white;" width="100%" height="80vh" src="https://leibmedic.ru/" name="iframe" scrolling="auto"></iframe>
         </div>
         <p class="popup_exit_button">X</p>
         <div class="shadow"></div>
@@ -45,6 +46,10 @@
  <a id="scroll_top" title="Наверх"></a>
  <header>
  	<div class="top">
+         <div class="mobile_flags">
+            <img class="english_language" src="/images/icons/flag.png" title="English language">
+            <img class="russian_language" src="/images/icons/flag2.png" title="Русский язык">
+        </div>
  		<h1><span>P</span>Prusov-code</h1>
  	</div>
  	<div class="bottom">
@@ -60,6 +65,22 @@
             <a href="#contacts"><li>Контакты</li></a>
  		</ul>
  	</div>
+    <div class="menu-tab">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+    </div>
+    <div class="menu-hide">
+      <nav>
+        <ul>
+          <a href="#about_me"><li>Обо мне</li></a>
+          <a href="#principles"><li>Принципы работ</li></a>
+          <a href="#works"><li>Работы</li></a>
+          <a href="#technical_part"><li>Технический раздел</li></a>
+          <a href="#contacts"><li>Контакты</li></a>
+        </ul>
+      </nav>
+    </div>
  </header>
  <main>
     <section class="intro" id="intro">
@@ -114,7 +135,7 @@ setInterval(draw, 33);</script>
                  <h1>Прусов Никита</h1>
                  <h2>Full-stack веб-разработчик</h2>
                  <h2>Полный спектр услуг веб-разработки. Frontend, backend, SEO</h2>
-                 <p>Я занимаюсь разработкой веб-сервисов уже более 2-ух лет. Среди моих работ присутствуют как небольшие сайты визитки, так и полноценные интернет-магазины и веб-сервисы.</p><p>За это время мне удалось поработать с многими компаниями, среди которых: строительные фирмы, частные клиниики, учебные центры</p><p>Я всегда отношусь к любому проекту как к своему личному и поэтому максимально тщательно прорабатываю стратегию с заказчиком, чтобы итоговый продукт стал тем инструментом, который небходим для развития и продвижения вашего бизнеса.</p><p>Я продолжаю вести свои проекты после окончания основных работ, решаю рутинные вопросы с доменом, хостингом, а также мелким правкам на сайте.</p><p>В своей работе я использую современные инструменты веб-разработки, что значительно ускоряет и удешевляет производство сайтов. Такой подход позволяет мне держать планку цены за мои услуги ниже средней рыночной.</p>
+                 <p>Я занимаюсь веб-разработкой уже более 3 лет. Среди моих работ присутсвуют как небольшие сайты визитки, так и полноценные интернет-магазины и веб-сервисы.</p><p>Среди моих клиентов: строительные фирмы, частные клиниики, учебные центры, кафе и рестораны</p><p>Я всегда максимально тщательно прорабатываю стратегию с заказчиком, создавая тем самым именно тот продукт, который небходим для развития и продвижения вашего бизнеса.</p><p>Я продолжаю вести свои проекты после окончания основных работ, решаю рутинные вопросы с доменом, хостингом, а также мелким правкам на сайте.</p><p>Я использую современные технологии веб-разработки, что значительно ускоряет и удешевляет производство сайтов.</p>
              </div>
          </div>
     </section>
@@ -125,39 +146,27 @@ setInterval(draw, 33);</script>
                  <div class="img_block"><img src="/images/icons/hands.png"></div>
                  <p class="title">Индивидуальный подход</p>
                  <p class="regular">Перед началом работы я всегда лично общаюсь с заказчиком, что помогает лучше понять продукт и выбрать правильную стратегию. Каждый проект уникален и разрабатывается с нуля, с учетом всех пожеланий заказчика</p>
-                 <!--<p class="regular">Каждый проект разрабатывается с нуля, я не использую никаких заготовок. Поэтому каждый новый проект получается уникальным и прорабатывается максимально скурпулезно.</p>-->
              </div>
             <div class="item">
                  <div class="img_block"><img src="/images/icons/adaptive.png"></div>
                  <p class="title">Адаптивность</p>
-                 <p class="regular">Создаваемые сайты всегда адаптивны и кроссбраузерны. Они отлично выглядят на разных устройствах и в разных браузерах, от телефона до 4к мониторов</p>
+                 <p class="regular">Сайты отлично на смотрятся на любых устройствах, маленьких или больших</p>
              </div>
                <div class="item">
                  <div class="img_block"><img src="/images/icons/speed.png"></div>
                  <p class="title">Быстродействие</p>
-                 <p class="regular">При создании сайтов я пишу исключительно чистый код и максимально его оптимизирую, чтобы пользователю не приходилось долго ждать загрузки</p>
+                 <p class="regular">Быстрое время загрузки сайта и взаимодействие с ним без задержек - мой наивысший приоритет.</p>
              </div>
-                           <div class="item">
+               <div class="item">
                  <div class="img_block"><img src="/images/icons/arrow_top.png"></div>
                  <p class="title">SEO оптимизация</p>
-                 <p class="regular">Я всегда создаю сайты с качественным семантическим ядром, что положительно влияет на выдачу в поисковиках, а также на приток целевой аудитории на сайт</p>
+                 <p class="regular">Мои сайты обладают качественным семантическим ядром, что положительно влияет на выдачу в поисковиках, а также на приток целевой аудитории на сайт</p>
              </div>
          </div>
     </section>
     <section id="works" class="works">
         <h1>Работы</h1>
         <div class="items">
-	    <div class="item">
-                <p>Сайт кафе "Ешь!"</p>
-                <div class="img_block">
-                    <div class="shadow"></div>
-                    <img src="/images/works/esh.png">
-                </div>
-                <div class="button_block">
-                    <button class="open_popup">Подробнее</button>
-                    <div class="background"></div>
-                </div>
-            </div>
             <div class="item">
                 <p>Клиника "Придворный лекарь"</p>
                 <div class="img_block">
@@ -281,5 +290,17 @@ setInterval(draw, 33);</script>
     </div>
 </div>
  </footer>
+ <script>
+     $(document).ready(function(){
+  $('.menu-tab').click(function(){
+    $('.menu-hide').toggleClass('show');
+    $('.menu-tab').toggleClass('active');
+  });
+  $('.menu-hide a').click(function(){
+    $('.menu-hide').removeClass('show');
+    $('.menu-tab').removeClass('active');
+  });
+});
+ </script>
 </body>
 </html>
