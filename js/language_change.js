@@ -31,6 +31,11 @@ $('.english_language').on('click',function () {
 		     $('section>h1').eq(2).text('Work principles');
 		     $('section>h1').eq(3).text('Portfolio');
  		     $('section>h1').eq(4).text('Technical information');
+ 		     $('.menu-hide nav ul>a').eq(0).find('li').text('About me');
+		     $('.menu-hide nav ul>a').eq(1).find('li').text('Work principles');
+		     $('.menu-hide nav ul>a').eq(2).find('li').text('Portfolio');
+ 		     $('.menu-hide nav ul>a').eq(3).find('li').text('Technical information');
+ 		     $('.menu-hide nav ul>a').eq(4).find('li').text('Contacts');
      	     for(var i=1;i<4;i++) {
 			     $('section>h1').eq(i).slideDown();
 		     }
@@ -79,6 +84,11 @@ $('.russian_language').on('click',function () {
 		     $('section>h1').eq(2).text('Принципы работы');
 		     $('section>h1').eq(3).text('Портфолио');
  		     $('section>h1').eq(4).text('Технический раздел');
+	         $('.menu-hide nav ul>a').eq(0).find('li').text('Обо мне');
+		     $('.menu-hide nav ul>a').eq(1).find('li').text('Принципы работы');
+		     $('.menu-hide nav ul>a').eq(2).find('li').text('Портфолио');
+ 		     $('.menu-hide nav ul>a').eq(3).find('li').text('Технический раздел');
+ 		     $('.menu-hide nav ul>a').eq(4).find('li').text('Контакты');
      	     for(var i=1;i<4;i++) {
 			     $('section>h1').eq(i).slideDown();
 		     }
