@@ -8,7 +8,6 @@ $(function(){
 	});
  
 	$('#scroll_top').click(function(){
-		$(this).css('transition','inherit')
 		$("html, body").animate({scrollTop: 0});
 		return false;
 	});
