@@ -1,10 +1,10 @@
 $(function(){
 	$(window).scroll(function(){
 		if($(window).scrollTop() > 100) {
-			$('#scroll_top').css('transition','inherit')
+			$('#scroll_top').css('transition','0.3s')
 			$('#scroll_top').fadeIn();
 		} else {
-			$('#scroll_top').css('transition','inherit')
+			$('#scroll_top').css('transition','0.3s')
 			$('#scroll_top').fadeOut();
 		}
 	});
