@@ -851,8 +851,12 @@ align-items: center;
 .website_info_popup .inner .website_slider .slick-slide img {
 	width: 100%!important;
 }
+.slick-prev {
+  left: -46px!important;
+}
 .slick-prev:before, .slick-next:before {
 	color: purple!important;
+	font-size: 40px;
 	transition: 0.3s;
 }
 .slick-prev:before:hover, .slick-next:before:hover {
