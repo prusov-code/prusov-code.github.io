@@ -861,7 +861,7 @@ align-items: center;
 	font-size: 40px!important;
 	transition: 0.3s!important;
 }
-.slick-prev:before:hover, .slick-next:before:hover {
+.slick-prev:hover:before, .slick-next:hover:before {
 	transform: scale(1.1)!important;
 }
 .slick-track {
