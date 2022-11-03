@@ -858,11 +858,11 @@ align-items: center;
 }
 .slick-prev:before, .slick-next:before {
 	color: purple!important;
-	font-size: 40px;
-	transition: 0.3s;
+	font-size: 40px!important;
+	transition: 0.3s!important;
 }
 .slick-prev:before:hover, .slick-next:before:hover {
-	transform: scale(1.1);
+	transform: scale(1.1)!important;
 }
 .slick-track {
 	display: flex!important;
