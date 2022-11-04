@@ -527,6 +527,7 @@ main .principles .items .item {
 	margin: 20px 30px;
 	display: flex;
 	max-width: 260px;
+	min-width: 260px;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
