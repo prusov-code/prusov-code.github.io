@@ -573,6 +573,9 @@ main .works .items .item {
 	margin: 20px 30px;
 	justify-content: center;
 }
+main .works .items .item>p {
+	max-width: 290px;
+}
 main .works .items .item .img_block {
 	width: 300px;
 	height: fit-content;
