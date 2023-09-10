@@ -700,6 +700,7 @@ main .technical_part .summary {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-bottom: 20px;
 }
 main .technical_part .summary a {
 	font-size: 20px;
