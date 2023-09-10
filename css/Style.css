@@ -704,6 +704,7 @@ main .technical_part .summary {
 main .technical_part .summary a {
 	font-size: 20px;
 	margin-top: 30px;
+	margin-right: 14px;
 	color: white;
 	transition: 0.3s;
 	text-decoration: none;
@@ -712,9 +713,13 @@ main .technical_part .summary a {
 	justify-content: center;
 	cursor: pointer;
 }
+main .technical_part .summary h3 {
+	margin: 0;
+	font-size: 30px;
+}
 main .technical_part .summary a img {
-	width: 40px;
-	margin-right: 30px;
+	width: 55px;
+	margin-right: 14px;
 }
 main .technical_part .summary a:hover {
 	transform: scale(1.1);
