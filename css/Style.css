@@ -575,6 +575,7 @@ main .works .items .item {
 }
 main .works .items .item>p {
 	max-width: 290px;
+	height: 40px;
 }
 main .works .items .item .img_block {
 	width: 300px;
