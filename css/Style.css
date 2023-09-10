@@ -710,6 +710,7 @@ main .technical_part .summary a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	cursor: pointer;
 }
 main .technical_part .summary a img {
 	width: 40px;
@@ -717,10 +718,6 @@ main .technical_part .summary a img {
 }
 main .technical_part .summary a:hover {
 	transform: scale(1.1);
-}
-main .technical_part .summary img{
- width: 90px;
- margin-left: -10px;
 }
 section {
 	padding-top: 15px;
