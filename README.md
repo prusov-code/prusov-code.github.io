@@ -1,3 +1,3 @@
-Prusov-code
+### Prusov-code
 =======
-**Personal web-page** of full-stack web developer **Prusov Nikita**
+**Portfolio website** of full-stack web developer hosted on github
