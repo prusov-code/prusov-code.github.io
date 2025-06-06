@@ -1,0 +1,8224 @@
+<!DOCTYPE html>
+<!-- saved from url=(0088)https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&quizId=342875 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>SyncShare</title>
+    <link href="./SyncShare_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./SyncShare_files/materialdesignicons.min.css">
+    <link rel="stylesheet" href="./SyncShare_files/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./SyncShare_files/default.css">
+    <link rel="stylesheet" href="./SyncShare_files/monokai.min.css">
+    <link rel="stylesheet" href="./SyncShare_files/highlightjs-copy.min.css">
+    <link href="./SyncShare_files/css" rel="stylesheet">
+    <link rel="stylesheet" href="./SyncShare_files/docs.css">
+
+    <style>
+        .card-header .fa {
+          transition: .3s transform ease-in-out;
+        }
+        .card-header .collapsed .fa {
+          transform: rotate(90deg);
+        }
+        .bg-blue-300 {
+            background-color: #6ea8fe;
+        }
+        pre > code {
+            font-family: 'JetBrains Mono';font-size: 12px;
+        }
+    </style>
+    <style>
+        tr > td.hljs-ln-line {
+          padding-left: 5px;
+        }
+
+        .hljs-ln-numbers {
+          text-align: right;
+        }
+
+        .hljs-ln-line.hljs-ln-n {
+          padding-right: 5px;
+        }
+    </style>
+<style type="text/css">.hljs-ln{border-collapse:collapse}.hljs-ln td{padding:0}.hljs-ln-n:before{content:attr(data-line-number)}</style><style type="text/css">.CtxtMenu_InfoClose {  top:.2em; right:.2em;}
+.CtxtMenu_InfoContent {  overflow:auto; text-align:left; font-size:80%;  padding:.4em .6em; border:1px inset; margin:1em 0px;  max-height:20em; max-width:30em; background-color:#EEEEEE;  white-space:normal;}
+.CtxtMenu_Info.CtxtMenu_MousePost {outline:none;}
+.CtxtMenu_Info {  position:fixed; left:50%; width:auto; text-align:center;  border:3px outset; padding:1em 2em; background-color:#DDDDDD;  color:black;  cursor:default; font-family:message-box; font-size:120%;  font-style:normal; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 15px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius:15px;               /* Safari and Chrome */  -moz-border-radius:15px;                  /* Firefox */  -khtml-border-radius:15px;                /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */  filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color="gray", Positive="true"); /* IE */}
+</style><style type="text/css">.CtxtMenu_MenuClose {  position:absolute;  cursor:pointer;  display:inline-block;  border:2px solid #AAA;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  font-family: "Courier New", Courier;  font-size:24px;  color:#F0F0F0}
+.CtxtMenu_MenuClose span {  display:block; background-color:#AAA; border:1.5px solid;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  line-height:0;  padding:8px 0 6px     /* may need to be browser-specific */}
+.CtxtMenu_MenuClose:hover {  color:white!important;  border:2px solid #CCC!important}
+.CtxtMenu_MenuClose:hover span {  background-color:#CCC!important}
+.CtxtMenu_MenuClose:hover:focus {  outline:none}
+</style><style type="text/css">.CtxtMenu_Menu {  position:absolute;  background-color:white;  color:black;  width:auto; padding:5px 0px;  border:1px solid #CCCCCC; margin:0; cursor:default;  font: menu; text-align:left; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 5px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius: 5px;             /* Safari and Chrome */  -moz-border-radius: 5px;                /* Firefox */  -khtml-border-radius: 5px;              /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */}
+.CtxtMenu_MenuItem {  padding: 1px 2em;  background:transparent;}
+.CtxtMenu_MenuArrow {  position:absolute; right:.5em; padding-top:.25em; color:#666666;  font-family: null; font-size: .75em}
+.CtxtMenu_MenuActive .CtxtMenu_MenuArrow {color:white}
+.CtxtMenu_MenuArrow.CtxtMenu_RTL {left:.5em; right:auto}
+.CtxtMenu_MenuCheck {  position:absolute; left:.7em;  font-family: null}
+.CtxtMenu_MenuCheck.CtxtMenu_RTL { right:.7em; left:auto }
+.CtxtMenu_MenuRadioCheck {  position:absolute; left: .7em;}
+.CtxtMenu_MenuRadioCheck.CtxtMenu_RTL {  right: .7em; left:auto}
+.CtxtMenu_MenuInputBox {  padding-left: 1em; right:.5em; color:#666666;  font-family: null;}
+.CtxtMenu_MenuInputBox.CtxtMenu_RTL {  left: .1em;}
+.CtxtMenu_MenuComboBox {  left:.1em; padding-bottom:.5em;}
+.CtxtMenu_MenuSlider {  left: .1em;}
+.CtxtMenu_SliderValue {  position:absolute; right:.1em; padding-top:.25em; color:#333333;  font-size: .75em}
+.CtxtMenu_SliderBar {  outline: none; background: #d3d3d3}
+.CtxtMenu_MenuLabel {  padding: 1px 2em 3px 1.33em;  font-style:italic}
+.CtxtMenu_MenuRule {  border-top: 1px solid #DDDDDD;  margin: 4px 3px;}
+.CtxtMenu_MenuDisabled {  color:GrayText}
+.CtxtMenu_MenuActive {  background-color: #606872;  color: white;}
+.CtxtMenu_MenuDisabled:focus {  background-color: #E8E8E8}
+.CtxtMenu_MenuLabel:focus {  background-color: #E8E8E8}
+.CtxtMenu_ContextMenu:focus {  outline:none}
+.CtxtMenu_ContextMenu .CtxtMenu_MenuItem:focus {  outline:none}
+.CtxtMenu_SelectionMenu {  position:relative; float:left;  border-bottom: none; -webkit-box-shadow:none; -webkit-border-radius:0px; }
+.CtxtMenu_SelectionItem {  padding-right: 1em;}
+.CtxtMenu_Selection {  right: 40%; width:50%; }
+.CtxtMenu_SelectionBox {  padding: 0em; max-height:20em; max-width: none;  background-color:#FFFFFF;}
+.CtxtMenu_SelectionDivider {  clear: both; border-top: 2px solid #000000;}
+.CtxtMenu_Menu .CtxtMenu_MenuClose {  top:-10px; left:-10px}
+</style><style id="MJX-CHTML-styles">
+mjx-container[jax="CHTML"] {
+  line-height: 0;
+}
+
+mjx-container [space="1"] {
+  margin-left: .111em;
+}
+
+mjx-container [space="2"] {
+  margin-left: .167em;
+}
+
+mjx-container [space="3"] {
+  margin-left: .222em;
+}
+
+mjx-container [space="4"] {
+  margin-left: .278em;
+}
+
+mjx-container [space="5"] {
+  margin-left: .333em;
+}
+
+mjx-container [rspace="1"] {
+  margin-right: .111em;
+}
+
+mjx-container [rspace="2"] {
+  margin-right: .167em;
+}
+
+mjx-container [rspace="3"] {
+  margin-right: .222em;
+}
+
+mjx-container [rspace="4"] {
+  margin-right: .278em;
+}
+
+mjx-container [rspace="5"] {
+  margin-right: .333em;
+}
+
+mjx-container [size="s"] {
+  font-size: 70.7%;
+}
+
+mjx-container [size="ss"] {
+  font-size: 50%;
+}
+
+mjx-container [size="Tn"] {
+  font-size: 60%;
+}
+
+mjx-container [size="sm"] {
+  font-size: 85%;
+}
+
+mjx-container [size="lg"] {
+  font-size: 120%;
+}
+
+mjx-container [size="Lg"] {
+  font-size: 144%;
+}
+
+mjx-container [size="LG"] {
+  font-size: 173%;
+}
+
+mjx-container [size="hg"] {
+  font-size: 207%;
+}
+
+mjx-container [size="HG"] {
+  font-size: 249%;
+}
+
+mjx-container [width="full"] {
+  width: 100%;
+}
+
+mjx-box {
+  display: inline-block;
+}
+
+mjx-block {
+  display: block;
+}
+
+mjx-itable {
+  display: inline-table;
+}
+
+mjx-row {
+  display: table-row;
+}
+
+mjx-row > * {
+  display: table-cell;
+}
+
+mjx-mtext {
+  display: inline-block;
+}
+
+mjx-mstyle {
+  display: inline-block;
+}
+
+mjx-merror {
+  display: inline-block;
+  color: red;
+  background-color: yellow;
+}
+
+mjx-mphantom {
+  visibility: hidden;
+}
+
+_::-webkit-full-page-media, _:future, :root mjx-container {
+  will-change: opacity;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display="block"] {
+  width: 100% !important;
+}
+
+mjx-c::before {
+  display: block;
+  width: 0;
+}
+
+.MJX-TEX {
+  font-family: MJXZERO, MJXTEX;
+}
+
+.TEX-B {
+  font-family: MJXZERO, MJXTEX-B;
+}
+
+.TEX-I {
+  font-family: MJXZERO, MJXTEX-I;
+}
+
+.TEX-MI {
+  font-family: MJXZERO, MJXTEX-MI;
+}
+
+.TEX-BI {
+  font-family: MJXZERO, MJXTEX-BI;
+}
+
+.TEX-S1 {
+  font-family: MJXZERO, MJXTEX-S1;
+}
+
+.TEX-S2 {
+  font-family: MJXZERO, MJXTEX-S2;
+}
+
+.TEX-S3 {
+  font-family: MJXZERO, MJXTEX-S3;
+}
+
+.TEX-S4 {
+  font-family: MJXZERO, MJXTEX-S4;
+}
+
+.TEX-A {
+  font-family: MJXZERO, MJXTEX-A;
+}
+
+.TEX-C {
+  font-family: MJXZERO, MJXTEX-C;
+}
+
+.TEX-CB {
+  font-family: MJXZERO, MJXTEX-CB;
+}
+
+.TEX-FR {
+  font-family: MJXZERO, MJXTEX-FR;
+}
+
+.TEX-FRB {
+  font-family: MJXZERO, MJXTEX-FRB;
+}
+
+.TEX-SS {
+  font-family: MJXZERO, MJXTEX-SS;
+}
+
+.TEX-SSB {
+  font-family: MJXZERO, MJXTEX-SSB;
+}
+
+.TEX-SSI {
+  font-family: MJXZERO, MJXTEX-SSI;
+}
+
+.TEX-SC {
+  font-family: MJXZERO, MJXTEX-SC;
+}
+
+.TEX-T {
+  font-family: MJXZERO, MJXTEX-T;
+}
+
+.TEX-V {
+  font-family: MJXZERO, MJXTEX-V;
+}
+
+.TEX-VB {
+  font-family: MJXZERO, MJXTEX-VB;
+}
+
+mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
+  font-family: MJXZERO, MJXTEX-S1, MJXTEX-S4, MJXTEX, MJXTEX-A ! important;
+}
+
+@font-face /* 0 */ {
+  font-family: MJXZERO;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Zero.woff") format("woff");
+}
+
+@font-face /* 1 */ {
+  font-family: MJXTEX;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff") format("woff");
+}
+
+@font-face /* 2 */ {
+  font-family: MJXTEX-B;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Bold.woff") format("woff");
+}
+
+@font-face /* 3 */ {
+  font-family: MJXTEX-I;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Math-Italic.woff") format("woff");
+}
+
+@font-face /* 4 */ {
+  font-family: MJXTEX-MI;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Italic.woff") format("woff");
+}
+
+@font-face /* 5 */ {
+  font-family: MJXTEX-BI;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Math-BoldItalic.woff") format("woff");
+}
+
+@font-face /* 6 */ {
+  font-family: MJXTEX-S1;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size1-Regular.woff") format("woff");
+}
+
+@font-face /* 7 */ {
+  font-family: MJXTEX-S2;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size2-Regular.woff") format("woff");
+}
+
+@font-face /* 8 */ {
+  font-family: MJXTEX-S3;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size3-Regular.woff") format("woff");
+}
+
+@font-face /* 9 */ {
+  font-family: MJXTEX-S4;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size4-Regular.woff") format("woff");
+}
+
+@font-face /* 10 */ {
+  font-family: MJXTEX-A;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_AMS-Regular.woff") format("woff");
+}
+
+@font-face /* 11 */ {
+  font-family: MJXTEX-C;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Regular.woff") format("woff");
+}
+
+@font-face /* 12 */ {
+  font-family: MJXTEX-CB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Bold.woff") format("woff");
+}
+
+@font-face /* 13 */ {
+  font-family: MJXTEX-FR;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Fraktur-Regular.woff") format("woff");
+}
+
+@font-face /* 14 */ {
+  font-family: MJXTEX-FRB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Fraktur-Bold.woff") format("woff");
+}
+
+@font-face /* 15 */ {
+  font-family: MJXTEX-SS;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Regular.woff") format("woff");
+}
+
+@font-face /* 16 */ {
+  font-family: MJXTEX-SSB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Bold.woff") format("woff");
+}
+
+@font-face /* 17 */ {
+  font-family: MJXTEX-SSI;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Italic.woff") format("woff");
+}
+
+@font-face /* 18 */ {
+  font-family: MJXTEX-SC;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Script-Regular.woff") format("woff");
+}
+
+@font-face /* 19 */ {
+  font-family: MJXTEX-T;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Typewriter-Regular.woff") format("woff");
+}
+
+@font-face /* 20 */ {
+  font-family: MJXTEX-V;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Vector-Regular.woff") format("woff");
+}
+
+@font-face /* 21 */ {
+  font-family: MJXTEX-VB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff") format("woff");
+}
+</style></head>
+<body>
+<div id="content" class="main-container">
+    <div id="quiz-container">
+        <h1 class="text-center mb-5">Итоговый тест</h1>
+
+        
+        
+            <div class="row">
+                
+
+<div id="q1" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 1
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q1">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Процессный подход к управлению - это (может быть несколько правильных ответов):</p>
+            
+    
+        <input type="checkbox" class="task-list-item-checkbox" disabled="">
+    
+        
+            процесс определения целей и путей их достижения
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" disabled="">
+    
+        
+            процесс распределения работы среди сотрудников и координация их деятельности
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            подход к управлению организацией, при котором оно рассматривается как непрерывная серия взаимосвязанных управленческих функций
+        </strong>
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            последовательность операций и процедур воздействия управляющей подсистемы на управляемую
+        </strong>
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">За</th>
+      <th style="text-align:right;">Против</th>
+    </tr>
+    </thead>
+    
+    <tbody>
+    
+    <tr>
+      <td>процесс определения целей и путей их достижения</td>
+      <td style="text-align:right;">0</td>
+      <td style="text-align:right;">9</td>
+    </tr>
+    
+    <tr>
+      <td>процесс распределения работы среди сотрудников и координация их деятельности</td>
+      <td style="text-align:right;">1</td>
+      <td style="text-align:right;">8</td>
+    </tr>
+    
+    <tr>
+      <td>подход к управлению организацией, при котором оно рассматривается как непрерывная серия взаимосвязанных управленческих функций</td>
+      <td style="text-align:right;">7</td>
+      <td style="text-align:right;">2</td>
+    </tr>
+    
+    <tr>
+      <td>последовательность операций и процедур воздействия управляющей подсистемы на управляемую</td>
+      <td style="text-align:right;">8</td>
+      <td style="text-align:right;">1</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q2" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 2
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q2">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Чье учение стало основным теоретическим источником современных концепций менеджмента?<br></p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            Мэри Фоллет
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            Анри Файоля
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            Жана Гетти
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            Фредерика Тейлора
+        </strong>
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>Анри Файоля</td>
+      <td style="text-align:right;">5</td>
+      <td>неверный ответ</td>
+    </tr>
+    
+    <tr>
+      <td>Фредерика Тейлора</td>
+      <td style="text-align:right;">7</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q3" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 3
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q3">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Практическая реализация данного принципа управления позволяет обеспечить своевременную адаптацию организации к изменяющимся условиям внешней среды или ее быструю перестройку в соответствии новым целям функционирования:</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            принцип регламентации
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            принцип демократизации управления
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            принцип формализации
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            принцип оптимальности управления
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            принцип научной обоснованности
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            принцип гибкости управления
+        </strong>
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>принцип гибкости управления</td>
+      <td style="text-align:right;">9</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q4" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 4
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q4">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Роль менеджера в управлении социально-экономическими объектами заключается в том, чтобы:</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            готовить управленческие решения
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            готовить и принимать управленческие решения
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            готовить, принимать и обеспечивать выполнение управленческих решений
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            принимать управленческие решения
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>готовить, принимать и обеспечивать выполнение управленческих решений</td>
+      <td style="text-align:right;">10</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q5" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 5
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q5">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Универсальные принципы управления разработала школа...</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            человеческих отношений
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            административная (классическая)
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            науки управления (количественная)
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            научного управления
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>административная (классическая)</td>
+      <td style="text-align:right;">12</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    <tr>
+      <td>науки управления (количественная)</td>
+      <td style="text-align:right;">1</td>
+      <td>неверный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q6" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 6
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q6">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Основоположники школы научного менеджмента полагали, что, проводя наблюдения, замеры и анализ, можно улучшить:</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            отношения в трудовой коллективе и повысить уровень мотивации работников
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            коммерческую деятельность предприятия, заметно повысим объемы продаж товаров
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            административную систему предприятием и добиться повышения эффективности управления
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            трудовые операции и добиться повышения его эффективности производства
+        </strong>
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>трудовые операции и добиться повышения его эффективности производства</td>
+      <td style="text-align:right;">13</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q7" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 7
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q7">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>К конкретным функциям управления ресурсами относят (может быть несколько правильных ответов):</p>
+            
+    
+        <input type="checkbox" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            управление запасами
+        </strong>
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            управление персоналом
+        </strong>
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" disabled="">
+    
+        
+            управление качеством
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" disabled="">
+    
+        
+            управление сбытом
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" disabled="">
+    
+        
+            управление производством
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" disabled="">
+    
+        
+            управление результатами
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            управление финансами
+        </strong>
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">За</th>
+      <th style="text-align:right;">Против</th>
+    </tr>
+    </thead>
+    
+    <tbody>
+    
+    <tr>
+      <td>управление запасами</td>
+      <td style="text-align:right;">11</td>
+      <td style="text-align:right;">1</td>
+    </tr>
+    
+    <tr>
+      <td>управление персоналом</td>
+      <td style="text-align:right;">11</td>
+      <td style="text-align:right;">1</td>
+    </tr>
+    
+    <tr>
+      <td>управление качеством</td>
+      <td style="text-align:right;">2</td>
+      <td style="text-align:right;">10</td>
+    </tr>
+    
+    <tr>
+      <td>управление сбытом</td>
+      <td style="text-align:right;">8</td>
+      <td style="text-align:right;">4</td>
+    </tr>
+    
+    <tr>
+      <td>управление производством</td>
+      <td style="text-align:right;">9</td>
+      <td style="text-align:right;">3</td>
+    </tr>
+    
+    <tr>
+      <td>управление результатами</td>
+      <td style="text-align:right;">0</td>
+      <td style="text-align:right;">12</td>
+    </tr>
+    
+    <tr>
+      <td>управление финансами</td>
+      <td style="text-align:right;">11</td>
+      <td style="text-align:right;">1</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q8" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 8
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q8">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Метод в управлении – это…<br><br><br></p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            существенная предпосылка основания, т. е. то внешнее по отношению к объекту, которое влияет на его сущность и характер протекающих в нем процессов
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            основа, базис, руководящие начала или правила, в соответствии с которыми строится управление социально-экономической системой
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            система правил и приемов подхода к изучению явлений и закономерностей управления, способ достижения определенных результатов в теории и практике управления
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            траектория развития (в статике – состояние) социально-экономической системы организации, наилучшая с точки зрения ее целей при данных внешних и внутренних условиях
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            внешнее проявление свойства какого‑либо объекта в данной системе отношений, в его движении, изменении и процессе управления им
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>система правил и приемов подхода к изучению явлений и закономерностей управления, способ достижения определенных результатов в теории и практике управления</td>
+      <td style="text-align:right;">14</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q9" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 9
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q9">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Полномочия представляют собой...</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            полное право использования всех ресурсов организации
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            комплект документов в отделе кадров
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            ограниченное право использовать ресурсы организации и направлять деятельность подчиненных на выполнение конкретных задач
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            обязательство выполнить поручение руководителя
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>ограниченное право использовать ресурсы организации и направлять деятельность подчиненных на выполнение конкретных задач</td>
+      <td style="text-align:right;">14</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q10" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 10
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q10">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>В чем заключается главный недостаток матричной системы управления?<br><br><br></p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            Удлиненные коммуникации между подразделениями, снижающие возможности оперативного управления.
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            Нарушение принципа единоначалия.
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            Опасность столкновения интересов функциональных подразделений.
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            Увеличение объема координационной деятельности.
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            Усиление недостатков функциональной специализации.
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>Нарушение принципа единоначалия.</td>
+      <td style="text-align:right;">8</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    <tr>
+      <td>Опасность столкновения интересов функциональных подразделений.</td>
+      <td style="text-align:right;">1</td>
+      <td>неверный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q11" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 11
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q11">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Для чего осуществляется делегирование полномочий подчинённым:<br></p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            для проверки квалификации подчиненных
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            для разгрузки самого руководителя
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            для сохранения "группового" стиля работы
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            для оптимального решения комплексной задачи
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>для оптимального решения комплексной задачи</td>
+      <td style="text-align:right;">3</td>
+      <td>неверный ответ</td>
+    </tr>
+    
+    <tr>
+      <td>для разгрузки самого руководителя</td>
+      <td style="text-align:right;">5</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    <tr>
+      <td>для сохранения "группового" стиля работы</td>
+      <td style="text-align:right;">1</td>
+      <td>неверный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q12" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 12
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q12">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>В теории управленческих решений под термином «проблема» понимается…<br><br><br></p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            совокупность взаимосвязанных характеристик, принятых для описания объекта организационного управления и их установленные нормативные значения
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            формализованное описание желаемого состояния объекта организационного управления
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            расхождение между желаемым и фактическим состоянием объекта организационного управления
+        </strong>
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>совокупность взаимосвязанных характеристик, принятых для описания объекта организационного управления и их установленные нормативные значения</td>
+      <td style="text-align:right;">1</td>
+      <td>неверный ответ</td>
+    </tr>
+    
+    <tr>
+      <td>расхождение между желаемым и фактическим состоянием объекта организационного управления</td>
+      <td style="text-align:right;">6</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q13" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 13
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q13">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Метод "мозговой атаки" представляет собой:</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            способ принятия решения, основанный на интуиции
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            способ принятия решения, при котором высказываются различные идеи, затем каждая обсуждается в группе экспертов
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            коллективное обсуждение предложенных руководством решений
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>способ принятия решения, при котором высказываются различные идеи, затем каждая обсуждается в группе экспертов</td>
+      <td style="text-align:right;">11</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q14" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 14
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q14">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Верно ли данное утверждение: "Процесс принятия управленческого решения есть процесс управления":</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            неверно
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            верно
+        </strong>
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>неверно</td>
+      <td style="text-align:right;">2</td>
+      <td>неверный ответ</td>
+    </tr>
+    
+    <tr>
+      <td>верно</td>
+      <td style="text-align:right;">13</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q15" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 15
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q15">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Благодаря выполнению какого требования, предъявляемых к управленческим решениям, должно быть возможным изменять цель и (или) алгоритм достижения цели при изменении внешних или внутренних условий:</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            обоснованность
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            реальная осуществимость
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            своевременность
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            эффективность
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            гибкость
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            четкость формулировок
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>гибкость</td>
+      <td style="text-align:right;">5</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    <tr>
+      <td>эффективность</td>
+      <td style="text-align:right;">1</td>
+      <td>неверный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q16" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 16
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q16">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Групповое принятие решений имеет ряд преимуществ по сравнению с индивидуальным. Выберите их (может быть несколько правильных ответов):</p>
+            
+    
+        <input type="checkbox" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            более полное информационное обеспечение процесса принятия решений
+        </strong>
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" disabled="">
+    
+        
+            как правило, требуют меньше времени
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" disabled="">
+    
+        
+            все перечисленные
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" disabled="">
+    
+        
+            более высокий уровень творчества
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            более высокую обоснованность и меньший процент ошибок
+        </strong>
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">За</th>
+      <th style="text-align:right;">Против</th>
+    </tr>
+    </thead>
+    
+    <tbody>
+    
+    <tr>
+      <td>более полное информационное обеспечение процесса принятия решений</td>
+      <td style="text-align:right;">11</td>
+      <td style="text-align:right;">1</td>
+    </tr>
+    
+    <tr>
+      <td>как правило, требуют меньше времени</td>
+      <td style="text-align:right;">0</td>
+      <td style="text-align:right;">12</td>
+    </tr>
+    
+    <tr>
+      <td>все перечисленные</td>
+      <td style="text-align:right;">0</td>
+      <td style="text-align:right;">12</td>
+    </tr>
+    
+    <tr>
+      <td>более высокий уровень творчества</td>
+      <td style="text-align:right;">2</td>
+      <td style="text-align:right;">10</td>
+    </tr>
+    
+    <tr>
+      <td>более высокую обоснованность и меньший процент ошибок</td>
+      <td style="text-align:right;">11</td>
+      <td style="text-align:right;">1</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q17" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 17
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q17">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Если в команде по Р. Белбину доминируют "Реализаторы" (Implementers), но нет "Мыслителей", это приведет к:<br><br><br></p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            быстрому выполнению стандартных задач
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            конфликтам за лидерство
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            чрезмерной бюрократии
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            отсутствию инновационных решений
+        </strong>
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>отсутствию инновационных решений</td>
+      <td style="text-align:right;">11</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q18" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 18
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q18">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Коммуникации, соответствующие целям деятельности организации, определенные правилами, должностными инструкциями и внутренними нормативными документами, это</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            вербальные
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            внешние
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            неформальные
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            внутренние
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            формальные
+        </strong>
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>формальные</td>
+      <td style="text-align:right;">5</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q19" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 19
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q19">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Наиболее эффективным каналом коммуникации (из перечисленных) считается:</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            новости в печатных средствах массовой информации
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            выступление перед большой аудиторией
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            разговор "лицом к лицу"
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            письмо
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>разговор "лицом к лицу"</td>
+      <td style="text-align:right;">13</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q20" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 20
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q20">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Руководители передают подчиненным приказы и распоряжения, планы и нормы, сообщают о текущих задачах, рекомендуемых процедурах и т.п. по коммуникациям:</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            горизонтальным
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            восходящим
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            диагональным
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            нисходящим
+        </strong>
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>нисходящим</td>
+      <td style="text-align:right;">9</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q21" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 21
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q21">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Измерение&nbsp;и оценка эффективности организаций&nbsp;данного типа&nbsp;базируется на анализе и расчете показателей, отражающих использование внутренних ресурсов, применяемых или используемых в процессе производства продукции или оказания услуг:</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            открытые
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            формальные
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            закрытые
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            неформальные
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>формальные</td>
+      <td style="text-align:right;">5</td>
+      <td>неверный ответ</td>
+    </tr>
+    
+    <tr>
+      <td>закрытые</td>
+      <td style="text-align:right;">6</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    <tr>
+      <td>открытые</td>
+      <td style="text-align:right;">1</td>
+      <td>неверный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q22" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 22
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q22">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Принцип управления - это...</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            основа, базис, руководящие начала или правила, в соответствии с которыми строится управление социально-экономической системой
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            система правил и приемов подхода к изучению явлений и закономерностей управления, способ достижения определенных результатов в теории и практике управления
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            траектория развития (в статике - состояние) социально-экономической системы организации, наилучшая с точки зрения ее целей при данных внешних и внутренних условиях
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            внешнее проявление свойства какого-либо объекта в данной системе отношений, в его движении и процессе изменения
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            существенная предпосылка основания, т. е. то внешнее по отношению к объекту, которое влияет на его сущность и характер протекающих в нем процессов
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>основа, базис, руководящие начала или правила, в соответствии с которыми строится управление социально-экономической системой</td>
+      <td style="text-align:right;">8</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    <tr>
+      <td>система правил и приемов подхода к изучению явлений и закономерностей управления, способ достижения определенных результатов в теории и практике управления</td>
+      <td style="text-align:right;">2</td>
+      <td>неверный ответ</td>
+    </tr>
+    
+    <tr>
+      <td>траектория развития (в статике - состояние) социально-экономической системы организации, наилучшая с точки зрения ее целей при данных внешних и внутренних условиях</td>
+      <td style="text-align:right;">1</td>
+      <td>правильность неизвестна</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q23" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 23
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q23">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Что понимал Анри Файоль под единоначалием?</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            за выполнение нескольких задач должен отвечать только один менеджер
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            за выполнение одной задачи должен отвечать только один работник
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            за выполнение одной задачи должен отвечать только один менеджер
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            один подчиненный должен подчиняться только одному руководителю
+        </strong>
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>один подчиненный должен подчиняться только одному руководителю</td>
+      <td style="text-align:right;">7</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q24" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 24
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q24">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Объект управления - это тот:</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            кто отдает управленческие распоряжения
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            на кого направлена управленческая деятельность
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            от кого зависит организационная структура управления
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            кто передает управленческие команды
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>на кого направлена управленческая деятельность</td>
+      <td style="text-align:right;">10</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q25" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 25
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q25">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Что значит разделить на части и делегировать выполнение управленческой задачи путем распределения полномочий, а также установления взаимосвязей между различными видами работ:</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            организовать
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            контролировать
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            планировать
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            распоряжаться
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            координировать
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>распоряжаться</td>
+      <td style="text-align:right;">2</td>
+      <td>неверный ответ</td>
+    </tr>
+    
+    <tr>
+      <td>организовать</td>
+      <td style="text-align:right;">6</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    <tr>
+      <td>координировать</td>
+      <td style="text-align:right;">2</td>
+      <td>неверный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q26" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 26
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q26">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Миссия организации – это:<br></p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            мотивация ее персонала
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            цель, связанная со снижением издержек
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            максимизация прибыли
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            внешнее предназначение организации
+        </strong>
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>максимизация прибыли</td>
+      <td style="text-align:right;">2</td>
+      <td>неверный ответ</td>
+    </tr>
+    
+    <tr>
+      <td>внешнее предназначение организации</td>
+      <td style="text-align:right;">4</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    <tr>
+      <td>цель, связанная со снижением издержек</td>
+      <td style="text-align:right;">2</td>
+      <td>неверный ответ</td>
+    </tr>
+    
+    <tr>
+      <td>мотивация ее персонала</td>
+      <td style="text-align:right;">1</td>
+      <td>неверный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q27" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 27
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q27">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Цель предварительного контроля:</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            обеспечение необходимых условий для бесперебойной и качественной работы организации
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            подведение итогов и формирование планов на будущее на основе анализа полученных результатов.
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            совершенствование деятельности, координация для движения к цели
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>совершенствование деятельности, координация для движения к цели</td>
+      <td style="text-align:right;">2</td>
+      <td>неверный ответ</td>
+    </tr>
+    
+    <tr>
+      <td>подведение итогов и формирование планов на будущее на основе анализа полученных результатов.</td>
+      <td style="text-align:right;">1</td>
+      <td>неверный ответ</td>
+    </tr>
+    
+    <tr>
+      <td>обеспечение необходимых условий для бесперебойной и качественной работы организации</td>
+      <td style="text-align:right;">11</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q28" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 28
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q28">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Процесс создания у членов организации внутреннего побуждения к действиям для достижения целей организации в соответствии с делегированными им обязанностями и сообразно с планом - это...</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            планирование
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            контроль
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            мотивация
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            организация
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            координация
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>мотивация</td>
+      <td style="text-align:right;">10</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q29" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 29
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q29">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Какое из перечисленных требований, предъявляемых к управленческим решениям, предполагает соотнесения затрат на разработку и реализацию решения с ожидаемыми или полученными результатами:</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            обоснованность
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            гибкость
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            подконтрольность
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            четкость формулировок
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            эффективность
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            своевременность
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            реальная осуществимость
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>реальная осуществимость</td>
+      <td style="text-align:right;">4</td>
+      <td>неверный ответ</td>
+    </tr>
+    
+    <tr>
+      <td>эффективность</td>
+      <td style="text-align:right;">6</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    <tr>
+      <td>обоснованность</td>
+      <td style="text-align:right;">1</td>
+      <td>неверный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q30" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 30
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q30">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Основные этапы процесса принятия и реализации управленческого решения:</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            варианты и альтернативы - решения - реализация - проблема
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            варианты и альтернативы - проблема - решения - реализация
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            решения - варианты и альтернативы - проблема - реализация
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            проблема - варианты и альтернативы - решения - реализация
+        </strong>
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>проблема - варианты и альтернативы - решения - реализация</td>
+      <td style="text-align:right;">10</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q31" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 31
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q31">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Под принятием решения понимается:</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            сознательный выбор действий из имеющихся альтернатив для достижения желаемых результатов
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            процесс обмена информацией между двумя и более субъектами
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            процесс формирования альтернатив
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            способ побуждения людей для достижения определенных целей
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>сознательный выбор действий из имеющихся альтернатив для достижения желаемых результатов</td>
+      <td style="text-align:right;">15</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q32" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 32
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q32">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Относительная характеристика результативности деятельности конкретной управляющей системы, которая отражается в различных показателях как объекта управления, так и собственной управленческой деятельности – это:<br><br><br></p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            эффект
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            коммуникации
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            управленческое решение
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            нет верного ответа
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            эффективность управления
+        </strong>
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>эффективность управления</td>
+      <td style="text-align:right;">9</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q33" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 33
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q33">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Если в организации доминирует управленцы с ролью "Administrator" (A) по модели PAEI Адизеса., это чаще всего приводит к:<br></p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            усилению командного духа
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            высокой текучести кадров
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            чрезмерной бюрократии
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            быстрому росту инноваций
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>усилению командного духа</td>
+      <td style="text-align:right;">2</td>
+      <td>неверный ответ</td>
+    </tr>
+    
+    <tr>
+      <td>чрезмерной бюрократии</td>
+      <td style="text-align:right;">3</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q34" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 34
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q34">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Идеальный PAEI-профиль (по известной модели И. Адизеса) топ-менеджера должен быть:</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            PAEI (все роли сбалансированы)
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            зависит от стадии жизненного цикла компании
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            pAEi (с акцентом на A и E)
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            PaEi (с акцентом на P и E)
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>PAEI (все роли сбалансированы)</td>
+      <td style="text-align:right;">2</td>
+      <td>неверный ответ</td>
+    </tr>
+    
+    <tr>
+      <td>зависит от стадии жизненного цикла компании</td>
+      <td style="text-align:right;">11</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q35" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 35
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q35">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Сущность системного подхода в управлении заключается в том, что:</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            необходимо соблюдать подчинение индивидуальных интересов общим
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            организация рассматривается как открытая система, в которой все ее части взаимосвязаны и изменение одной из них оказывает влияние на все остальные
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            управление необходимо рассматривать как непрерывный процесс
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            управленческое поведение должно быть разным в различных ситуациях
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>организация рассматривается как открытая система, в которой все ее части взаимосвязаны и изменение одной из них оказывает влияние на все остальные</td>
+      <td style="text-align:right;">4</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q36" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 36
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q36">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>В рамках какой управленческой революции отмечают появление научных течений, создание школ в управлении, исследующих проблему эффективного управления?<br></p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            производственно-строительная
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            бюрократическая
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            индустриальная
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            «тихая» или новая управленческая парадигма
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            религиозно-коммерческая
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            светско-административная
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>«тихая» или новая управленческая парадигма</td>
+      <td style="text-align:right;">1</td>
+      <td>правильность неизвестна</td>
+    </tr>
+    
+    <tr>
+      <td>светско-административная</td>
+      <td style="text-align:right;">1</td>
+      <td>неверный ответ</td>
+    </tr>
+    
+    <tr>
+      <td>индустриальная</td>
+      <td style="text-align:right;">3</td>
+      <td>неверный ответ</td>
+    </tr>
+    
+    <tr>
+      <td>бюрократическая</td>
+      <td style="text-align:right;">4</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q37" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 37
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q37">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Делегирование полномочий означает...</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            передачу информации на высший уровень
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            передачу информации на более низкий уровень скалярной цепи управления
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            передачу ответственности подчиненному работнику
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            передачу задач и полномочий лицу, которое принимает на себя ответственность за их выполнение
+        </strong>
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>передачу задач и полномочий лицу, которое принимает на себя ответственность за их выполнение</td>
+      <td style="text-align:right;">5</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q38" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 38
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q38">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Планированием называется:</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            обеспечение целенаправленного развития организации в целом и всех её подразделений
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            управленческая деятельность, отраженная в планах и фиксирующая будущее состояние организации в текущее время
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            функция в управлении, задачей которой является формирование структуры организации и обеспечение необходимыми ресурсами для ее нормальной работы
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>обеспечение целенаправленного развития организации в целом и всех её подразделений</td>
+      <td style="text-align:right;">1</td>
+      <td>правильность неизвестна</td>
+    </tr>
+    
+    <tr>
+      <td>управленческая деятельность, отраженная в планах и фиксирующая будущее состояние организации в текущее время</td>
+      <td style="text-align:right;">12</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    <tr>
+      <td>функция в управлении, задачей которой является формирование структуры организации и обеспечение необходимыми ресурсами для ее нормальной работы</td>
+      <td style="text-align:right;">1</td>
+      <td>неверный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q39" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 39
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q39">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Решения, являющиеся результатом реализации определенной последовательности действий, имеющие конкретный механизм реализации:</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            запрограммированные решения
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            рациональные решения
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            осторожные решения
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            незапрограммированные решения
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>запрограммированные решения</td>
+      <td style="text-align:right;">9</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q40" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 40
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q40">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>По степени обязательности исполнения выделяют какие управленческие решения?</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            запрограммированные и незапрограммированные
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            директивные и рекомендательные
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            детерминированные, вероятностные и неопределенные
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            перспективные и текущие
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            единоличные, консультативные и совместные
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            глобальные и локальные
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>директивные и рекомендательные</td>
+      <td style="text-align:right;">14</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q41" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 41
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q41">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Выберите те критерии эффективности управленческих решений, которые относятся к объекту управления (может быть несколько правильных ответов):</p>
+            
+    
+        <input type="checkbox" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            наивысшая рентабельность
+        </strong>
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" disabled="">
+    
+        
+            оперативность доведения решения до исполнителей
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            наименьшие затраты различных ресурсов
+        </strong>
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            высокий уровень технической оснащенности организации
+        </strong>
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" disabled="">
+    
+        
+            быстрый сбор необходимой информации для принятия управленческих решений.
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" disabled="">
+    
+        
+            способность принимать оптимально решение в кратчайший срок
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">За</th>
+      <th style="text-align:right;">Против</th>
+    </tr>
+    </thead>
+    
+    <tbody>
+    
+    <tr>
+      <td>наивысшая рентабельность</td>
+      <td style="text-align:right;">12</td>
+      <td style="text-align:right;">5</td>
+    </tr>
+    
+    <tr>
+      <td>оперативность доведения решения до исполнителей</td>
+      <td style="text-align:right;">2</td>
+      <td style="text-align:right;">15</td>
+    </tr>
+    
+    <tr>
+      <td>наименьшие затраты различных ресурсов</td>
+      <td style="text-align:right;">14</td>
+      <td style="text-align:right;">3</td>
+    </tr>
+    
+    <tr>
+      <td>высокий уровень технической оснащенности организации</td>
+      <td style="text-align:right;">11</td>
+      <td style="text-align:right;">6</td>
+    </tr>
+    
+    <tr>
+      <td>быстрый сбор необходимой информации для принятия управленческих решений.</td>
+      <td style="text-align:right;">2</td>
+      <td style="text-align:right;">15</td>
+    </tr>
+    
+    <tr>
+      <td>способность принимать оптимально решение в кратчайший срок</td>
+      <td style="text-align:right;">2</td>
+      <td style="text-align:right;">15</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q42" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 42
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q42">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Выберите те критерии эффективности управленческих решений, которые относятся к субъекту управления (может быть несколько правильных ответов):</p>
+            
+    
+        <input type="checkbox" class="task-list-item-checkbox" disabled="">
+    
+        
+            высокий уровень технической оснащенности организации
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            быстрый сбор необходимой информации для принятия управленческих решений
+        </strong>
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            оперативность доведения решения до исполнителей
+        </strong>
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            способность принимать оптимально решение в кратчайший срок
+        </strong>
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" disabled="">
+    
+        
+            наивысшая рентабельность
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" disabled="">
+    
+        
+            наименьшие затраты различных ресурсов
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">За</th>
+      <th style="text-align:right;">Против</th>
+    </tr>
+    </thead>
+    
+    <tbody>
+    
+    <tr>
+      <td>высокий уровень технической оснащенности организации</td>
+      <td style="text-align:right;">2</td>
+      <td style="text-align:right;">10</td>
+    </tr>
+    
+    <tr>
+      <td>быстрый сбор необходимой информации для принятия управленческих решений</td>
+      <td style="text-align:right;">11</td>
+      <td style="text-align:right;">1</td>
+    </tr>
+    
+    <tr>
+      <td>оперативность доведения решения до исполнителей</td>
+      <td style="text-align:right;">11</td>
+      <td style="text-align:right;">1</td>
+    </tr>
+    
+    <tr>
+      <td>способность принимать оптимально решение в кратчайший срок</td>
+      <td style="text-align:right;">11</td>
+      <td style="text-align:right;">1</td>
+    </tr>
+    
+    <tr>
+      <td>наивысшая рентабельность</td>
+      <td style="text-align:right;">0</td>
+      <td style="text-align:right;">12</td>
+    </tr>
+    
+    <tr>
+      <td>наименьшие затраты различных ресурсов</td>
+      <td style="text-align:right;">1</td>
+      <td style="text-align:right;">11</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q43" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 43
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q43">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Согласно&nbsp;модели эффективного командного взаимодействия&nbsp;П.&nbsp;Ленсиони, если команда избегает конфликтов, это приводит к:<br></p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            усилению роли лидера
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            искусственному согласию и слабым решениям
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            ускоренному принятию решений
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            повышению креативности
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>искусственному согласию и слабым решениям</td>
+      <td style="text-align:right;">5</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q44" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 44
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q44">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Источниками управленческой информации бывают (несколько вариантов ответов):</p>
+            
+    
+        <input type="checkbox" class="task-list-item-checkbox" disabled="">
+    
+        
+            понятные
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            внутренние
+        </strong>
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            внешние
+        </strong>
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" disabled="">
+    
+        
+            главные
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" disabled="">
+    
+        
+            второстепенные
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">За</th>
+      <th style="text-align:right;">Против</th>
+    </tr>
+    </thead>
+    
+    <tbody>
+    
+    <tr>
+      <td>понятные</td>
+      <td style="text-align:right;">0</td>
+      <td style="text-align:right;">9</td>
+    </tr>
+    
+    <tr>
+      <td>внутренние</td>
+      <td style="text-align:right;">9</td>
+      <td style="text-align:right;">0</td>
+    </tr>
+    
+    <tr>
+      <td>внешние</td>
+      <td style="text-align:right;">9</td>
+      <td style="text-align:right;">0</td>
+    </tr>
+    
+    <tr>
+      <td>главные</td>
+      <td style="text-align:right;">0</td>
+      <td style="text-align:right;">9</td>
+    </tr>
+    
+    <tr>
+      <td>второстепенные</td>
+      <td style="text-align:right;">0</td>
+      <td style="text-align:right;">9</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q45" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 45
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q45">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p><br><br>Модель эффективного командного взаимодействия Катценбаха и Смита утверждает, что "Настоящая команда" отличается от "Рабочей группы":<br><br><br></p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            жесткой иерархией
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            взаимной ответственностью за результат
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            отсутствием конфликтов
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            формальным распределением ролей
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>формальным распределением ролей</td>
+      <td style="text-align:right;">1</td>
+      <td>правильность неизвестна</td>
+    </tr>
+    
+    <tr>
+      <td>взаимной ответственностью за результат</td>
+      <td style="text-align:right;">4</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q46" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 46
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q46">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Управленческая деятельность начинается с процесса ............ информации:</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            хранения
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            переработки
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            накопления
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            сбора
+        </strong>
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>сбора</td>
+      <td style="text-align:right;">5</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q47" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 47
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q47">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Сущность ситуационного подхода состоит в следующем</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            правильное интерпретирование ситуации, определение важнейших факторов и применение адекватных методов
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            знание методов профессионального управления, доказавших свою эффективность
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            умение предвидеть последствия применяемых методик и концепций
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            применение способов действий, вызывающих удовлетворительное отношение руководителя
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>правильное интерпретирование ситуации, определение важнейших факторов и применение адекватных методов</td>
+      <td style="text-align:right;">10</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q48" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 48
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q48">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Уровень управления, на котором менеджеры несут ответственность за достижение тактических целей:<br><br><br></p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            Средний.
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            Технический.
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            Высший.
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            Низший.
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>Средний.</td>
+      <td style="text-align:right;">8</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q49" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 49
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q49">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Какой из методов генерирования альтернативных вариантов управленческих решений основан на ограничении обсуждения в группе до определенного предела, члены группы присутствуют на встрече, но действуют независимо друг от друга?</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            метод Дельфи
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            метод номинальной группы
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            метод аналогов
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            метод "мозговой атаки"
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>метод номинальной группы</td>
+      <td style="text-align:right;">15</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q50" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 50
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q50">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Какие функции присущи для субъектов управленческих решений?</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            определение эффективности управленческого решения
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            психологическое влияние на персонал с целью достижения собственных выгод
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            защита организации от внешнего воздействия
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>определение эффективности управленческого решения</td>
+      <td style="text-align:right;">10</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    <tr>
+      <td>психологическое влияние на персонал с целью достижения собственных выгод</td>
+      <td style="text-align:right;">1</td>
+      <td>правильность неизвестна</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q51" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 51
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q51">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Как называется один из основных факторов эффективности, который определяется как соотношение количества продукции компании и количества затрат на ее выпуск:</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            производительность
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            качество
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            экономичность
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            действенность
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            прибыльность
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>производительность</td>
+      <td style="text-align:right;">7</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q52" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 52
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q52">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Коммуникации, которые не зависят от иерархии организации, ее бизнес-процессов и технологических процедур и представляют свободный обмен сведениями и мнениями между сотрудниками и неформальными группами, это</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            внутренние
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            неформальные
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            формальные
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            внешние
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            вербальные
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>неформальные</td>
+      <td style="text-align:right;">9</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q53" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 53
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q53">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p><br><br>Роль предпринимателя "Entrepreneur" (E) по модели PAEI И. Адизеса критически важна для организации:<br><br><br></p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            при&nbsp;рутинных операционных процессах
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            в&nbsp;период сокращения персонала
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            на этапе кризиса или необходимости изменений
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            в условиях стабильного рынка
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>на этапе кризиса или необходимости изменений</td>
+      <td style="text-align:right;">7</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q54" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 54
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q54">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Субъект управления - это тот:</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            кто отдает управленческие распоряжения
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            на кого направлена управленческая деятельность
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            кто имеет субъективный взгляд на систему управления
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            кто получает управленческие указания
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>кто отдает управленческие распоряжения</td>
+      <td style="text-align:right;">7</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q55" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 55
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q55">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Законы управления – это…<br><br><br></p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            Совокупность систематизированных управленческих понятий, терминов, дефиниций, предназначенных для описания процессов эффективного управления.
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            Объективные, существенные, устойчивые, повторяющиеся связи и взаимозависимости явлений и процессов.
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            Обобщенное, абстрактное, теоретическое выражение объективно существующих управленческих отношений, их различных проявлений, сторон, черт.
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            Объективные, существенные, достаточно устойчивые, периодически повторяющиеся связи и взаимозависимости явлений и процессов управления, проявляющиеся в виде тенденций развития.
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            Причина, движущая сила совершающегося процесса или одно из его основных условий.
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>Объективные, существенные, достаточно устойчивые, периодически повторяющиеся связи и взаимозависимости явлений и процессов управления, проявляющиеся в виде тенденций развития.</td>
+      <td style="text-align:right;">6</td>
+      <td>неверный ответ</td>
+    </tr>
+    
+    <tr>
+      <td>Совокупность систематизированных управленческих понятий, терминов, дефиниций, предназначенных для описания процессов эффективного управления.</td>
+      <td style="text-align:right;">3</td>
+      <td>неверный ответ</td>
+    </tr>
+    
+    <tr>
+      <td>Объективные, существенные, устойчивые, повторяющиеся связи и взаимозависимости явлений и процессов.</td>
+      <td style="text-align:right;">2</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q56" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 56
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q56">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Какой из принципов устанавливает требование достижения целей управления с минимальными затратами времени и средств:</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            принцип формализации
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            принцип гибкости управления
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            принцип оптимальности управления
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            принцип демократизации управления
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            принцип регламентации
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            принцип научной обоснованности
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>принцип оптимальности управления</td>
+      <td style="text-align:right;">9</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q57" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 57
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q57">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Что является главной особенностью бюрократического типа управления?<br><br><br></p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            Слабая исполнительская дисциплина.
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            Высокая формализация управленческих процедур.
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            Повышенное внимание к работе с персоналом.
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            Повышенное внимание к функции мотивации.
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>Высокая формализация управленческих процедур.</td>
+      <td style="text-align:right;">8</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q58" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 58
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q58">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Разделение всей работы на отдельные специализированные задания на одном уровне управления есть...</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            вертикальное разделение управленческого труда
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            горизонтальное разделение труда
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            вертикальное разделение труда
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            диагональное разделение труда
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>горизонтальное разделение труда</td>
+      <td style="text-align:right;">9</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    <tr>
+      <td>вертикальное разделение управленческого труда</td>
+      <td style="text-align:right;">1</td>
+      <td>правильность неизвестна</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q59" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 59
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q59">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>В &nbsp;теории управления различают следующие виды эффективности (может быть несколько правильных ответов):<br><br><br></p>
+            
+    
+        <input type="checkbox" class="task-list-item-checkbox" disabled="">
+    
+        
+            административную
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            социальную
+        </strong>
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            экономическую
+        </strong>
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" disabled="">
+    
+        
+            нет верного ответа
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">За</th>
+      <th style="text-align:right;">Против</th>
+    </tr>
+    </thead>
+    
+    <tbody>
+    
+    <tr>
+      <td>административную</td>
+      <td style="text-align:right;">0</td>
+      <td style="text-align:right;">3</td>
+    </tr>
+    
+    <tr>
+      <td>социальную</td>
+      <td style="text-align:right;">3</td>
+      <td style="text-align:right;">0</td>
+    </tr>
+    
+    <tr>
+      <td>экономическую</td>
+      <td style="text-align:right;">3</td>
+      <td style="text-align:right;">0</td>
+    </tr>
+    
+    <tr>
+      <td>нет верного ответа</td>
+      <td style="text-align:right;">0</td>
+      <td style="text-align:right;">3</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q60" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 60
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q60">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Целью административной школы управления было создание:</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            универсальных принципов управления
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            методов нормирования труда
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            условий трудовой деятельности работников
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            методов стимулирования производительности труда
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>универсальных принципов управления</td>
+      <td style="text-align:right;">8</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q61" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 61
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q61">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Что не является продуктом труда менеджера?</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            выполненная функция
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            решенная задача
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            готовая продукция
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            управленческое решение
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>готовая продукция</td>
+      <td style="text-align:right;">8</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    <tr>
+      <td>решенная задача</td>
+      <td style="text-align:right;">1</td>
+      <td>правильность неизвестна</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q62" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 62
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q62">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>В чем состоит суть содержательной теории мотивации?</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            анализ потребностей и их влиянии на мотивацию
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            изучение конкретных приемов и концепций управления в увязке с конкретными ситуациями
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            процесс распределения усилий людьми для достижения различных целей, выбора конкретного вида поведения, постулате, что поведение личности является функцией ее восприятия и ожиданий, связанных с данной ситуацией, и возможных последствий выбранного типа поведения
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            исследование позитивных и негативных элементов влияния внешней среды на организацию
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>анализ потребностей и их влиянии на мотивацию</td>
+      <td style="text-align:right;">10</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    <tr>
+      <td>процесс распределения усилий людьми для достижения различных целей, выбора конкретного вида поведения, постулате, что поведение личности является функцией ее восприятия и ожиданий, связанных с данной ситуацией, и возможных последствий выбранного типа поведения</td>
+      <td style="text-align:right;">1</td>
+      <td>неверный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q63" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 63
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q63">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Главная задача данной функции управления является достижение согласованности в работе всех звеньев организации путем установления рациональных связей между ними:</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            контроль
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            организация
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            планирование
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            координация
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            мотивация
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>координация</td>
+      <td style="text-align:right;">6</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q64" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 64
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q64">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>На каком этапе разработки и принятия управленческих решений наиболее эффективными методами являются "мозговая атака" ("мозговой штурм") и метод "Дельфи":</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            оценка принятого решения
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            формулировка задачи
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            реализация и контроль
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            принятие решений
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            разработка вариантов решения (поиск решения)
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            оценка вариантов решения и выбор оптимального
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>разработка вариантов решения (поиск решения)</td>
+      <td style="text-align:right;">10</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q65" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 65
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q65">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>При принятии управленческих &nbsp;решений используют подходы (несколько вариантов ответов):</p>
+            
+    
+        <input type="checkbox" class="task-list-item-checkbox" disabled="">
+    
+        
+            расчетно-аналитический
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            основанный на опыте
+        </strong>
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            рациональный
+        </strong>
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            интуитивный
+        </strong>
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" disabled="">
+    
+        
+            экспертный
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">За</th>
+      <th style="text-align:right;">Против</th>
+    </tr>
+    </thead>
+    
+    <tbody>
+    
+    <tr>
+      <td>расчетно-аналитический</td>
+      <td style="text-align:right;">5</td>
+      <td style="text-align:right;">4</td>
+    </tr>
+    
+    <tr>
+      <td>основанный на опыте</td>
+      <td style="text-align:right;">7</td>
+      <td style="text-align:right;">2</td>
+    </tr>
+    
+    <tr>
+      <td>рациональный</td>
+      <td style="text-align:right;">5</td>
+      <td style="text-align:right;">4</td>
+    </tr>
+    
+    <tr>
+      <td>интуитивный</td>
+      <td style="text-align:right;">5</td>
+      <td style="text-align:right;">4</td>
+    </tr>
+    
+    <tr>
+      <td>экспертный</td>
+      <td style="text-align:right;">5</td>
+      <td style="text-align:right;">4</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q66" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 66
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q66">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Что относится к вербальным средствам коммуникации (может быть несколько правильных ответов):</p>
+            
+    
+        <input type="checkbox" class="task-list-item-checkbox" disabled="">
+    
+        
+            азбука Морзе
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" disabled="">
+    
+        
+            мимика
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" disabled="">
+    
+        
+            система жестов
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            устная речь
+        </strong>
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            письменная речь
+        </strong>
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">За</th>
+      <th style="text-align:right;">Против</th>
+    </tr>
+    </thead>
+    
+    <tbody>
+    
+    <tr>
+      <td>азбука Морзе</td>
+      <td style="text-align:right;">2</td>
+      <td style="text-align:right;">7</td>
+    </tr>
+    
+    <tr>
+      <td>мимика</td>
+      <td style="text-align:right;">1</td>
+      <td style="text-align:right;">8</td>
+    </tr>
+    
+    <tr>
+      <td>система жестов</td>
+      <td style="text-align:right;">2</td>
+      <td style="text-align:right;">7</td>
+    </tr>
+    
+    <tr>
+      <td>устная речь</td>
+      <td style="text-align:right;">9</td>
+      <td style="text-align:right;">0</td>
+    </tr>
+    
+    <tr>
+      <td>письменная речь</td>
+      <td style="text-align:right;">9</td>
+      <td style="text-align:right;">0</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q67" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 67
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q67">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Верно ли, что искажение информации может быть вызвано как ее избыточностью, так и недостаточностью:</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            неверно
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            верно
+        </strong>
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>верно</td>
+      <td style="text-align:right;">9</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q68" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 68
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q68">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Как наиболее полно и глубоко можно определить искусство управления?</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            это толерантность и склонность к конформизму
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            это комплекс знаний и опыта управления, присущих менеджеру
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            это богатый опыт управления, осознанный менеджером
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            это способности менеджера, реализованные в его практической деятельности, индивидуализированное использование знаний в процессе практического управления
+        </strong>
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>это способности менеджера, реализованные в его практической деятельности, индивидуализированное использование знаний в процессе практического управления</td>
+      <td style="text-align:right;">16</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q69" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 69
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q69">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Закономерности в менеджменте – это…<br><br><br></p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            Обобщенное, абстрактное, теоретическое выражение объективно существующих управленческих отношений, их различных проявлений, сторон, черт.
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            Совокупность систематизированных управленческих понятий, терминов, дефиниций, предназначенных для описания процессов эффективного управления.
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            Объективные, существенные, устойчивые, повторяющиеся связи и взаимозависимости явлений и процессов.
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            Причина, движущая сила совершающегося процесса или одно из его основных условий.
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            Объективные, существенные, достаточно устойчивые, периодически повторяющиеся связи и взаимозависимости явлений и процессов управления, проявляющиеся в виде тенденций развития.
+        </strong>
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>Объективные, существенные, достаточно устойчивые, периодически повторяющиеся связи и взаимозависимости явлений и процессов управления, проявляющиеся в виде тенденций развития.</td>
+      <td style="text-align:right;">9</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q70" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 70
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q70">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>На чем основываются социальные методы управления?</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            на воздействии на сознание и социальные условия
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            на законодательных и нормативных актах
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            на материальном интересе работников
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>на воздействии на сознание и социальные условия</td>
+      <td style="text-align:right;">3</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q71" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 71
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q71">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>По степени и уровню информационной обеспеченности выделяют следующие управленческие решения:</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            детерминированные, вероятностные и неопределенные
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            запрограммированные и незапрограммированные
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            директивные и рекомендательные
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            глобальные и локальные
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            единоличные, консультативные и совместные
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            перспективные и текущие
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>директивные и рекомендательные</td>
+      <td style="text-align:right;">3</td>
+      <td>неверный ответ</td>
+    </tr>
+    
+    <tr>
+      <td>детерминированные, вероятностные и неопределенные</td>
+      <td style="text-align:right;">10</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q72" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 72
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q72">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Обмен информацией между сотрудниками разных подразделений, находящимися на разных уровнях организационной иерархии, передаются по коммуникациям:<br><br><br></p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            восходящим
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            горизонтальным
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            нисходящим
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            диагональным
+        </strong>
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>диагональным</td>
+      <td style="text-align:right;">10</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q73" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 73
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q73">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Заключительный контроль проводится...</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            все ответы верны
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            до принятия окончательного решения по какому‑либо вопросу в целях предупреждения неверных или необоснованных решений
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            для проверки, насколько правильно исполнены решения, какие при этом были допущены нарушения, их причины, виновники, насколько обоснованы были сами решения
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            в процессе исполнения принятых решений, пока еще не достигнуты конечные результаты
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>для проверки, насколько правильно исполнены решения, какие при этом были допущены нарушения, их причины, виновники, насколько обоснованы были сами решения</td>
+      <td style="text-align:right;">7</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q74" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 74
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q74">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>К требованиям, предъявляемым к управленческой информации не относится...</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            адресность
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            образность
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            достоверность
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            оперативность
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>образность</td>
+      <td style="text-align:right;">6</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q75" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 75
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q75">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Конкретные конечные результаты, которые хотела бы достичь организация - это:<br><br><br></p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            миссия
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            цели
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            тактика деятельность организации
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            стратегия
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>цели</td>
+      <td style="text-align:right;">8</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q76" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 76
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q76">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Основная&nbsp;задача какой школы управления является внедрение методов и аппарата точных наук в исследование управленческой деятельности?<br><br><br></p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            школа научного управления
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            школа человеческих отношений и поведенческих наук
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            административная школа управления
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            школа науки управления &nbsp;или школа количественных методов
+        </strong>
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>административная школа управления</td>
+      <td style="text-align:right;">3</td>
+      <td>неверный ответ</td>
+    </tr>
+    
+    <tr>
+      <td>школа человеческих отношений и поведенческих наук</td>
+      <td style="text-align:right;">1</td>
+      <td>правильность неизвестна</td>
+    </tr>
+    
+    <tr>
+      <td>школа науки управления &nbsp;или школа количественных методов</td>
+      <td style="text-align:right;">1</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    <tr>
+      <td>школа научного управления</td>
+      <td style="text-align:right;">1</td>
+      <td>неверный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q77" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 77
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q77">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>В модели эффективного командного взаимодействия Такмена стадия "Нормирование" наступает, когда:<br><br><br></p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            Команда достигает пика продуктивности
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            Участники конфликтуют за роли
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            Появляются общие правила и доверие
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            Проект близится к завершению
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>Появляются общие правила и доверие</td>
+      <td style="text-align:right;">6</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q78" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 78
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q78">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Основными элементами коммуникационного процесса являются (может быть несколько правильных ответов):</p>
+            
+    
+        <input type="checkbox" class="task-list-item-checkbox" disabled="">
+    
+        
+            кодирование
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" disabled="">
+    
+        
+            декодирование
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            канал передачи
+        </strong>
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            получатель
+        </strong>
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            отправитель
+        </strong>
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            сообщение
+        </strong>
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">За</th>
+      <th style="text-align:right;">Против</th>
+    </tr>
+    </thead>
+    
+    <tbody>
+    
+    <tr>
+      <td>кодирование</td>
+      <td style="text-align:right;">1</td>
+      <td style="text-align:right;">8</td>
+    </tr>
+    
+    <tr>
+      <td>декодирование</td>
+      <td style="text-align:right;">0</td>
+      <td style="text-align:right;">9</td>
+    </tr>
+    
+    <tr>
+      <td>канал передачи</td>
+      <td style="text-align:right;">9</td>
+      <td style="text-align:right;">0</td>
+    </tr>
+    
+    <tr>
+      <td>получатель</td>
+      <td style="text-align:right;">9</td>
+      <td style="text-align:right;">0</td>
+    </tr>
+    
+    <tr>
+      <td>отправитель</td>
+      <td style="text-align:right;">9</td>
+      <td style="text-align:right;">0</td>
+    </tr>
+    
+    <tr>
+      <td>сообщение</td>
+      <td style="text-align:right;">9</td>
+      <td style="text-align:right;">0</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q79" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 79
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q79">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Внутренняя эффективность управления отражает способность наилучшим образом распределять и использовать имеющиеся ресурсы для достижения организационной системой целей, диктуемых общественными потребностями:<br><br><br></p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            Верно
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            Неверно
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>Верно</td>
+      <td style="text-align:right;">6</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q80" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 80
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q80">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Основное значение контроля состоит в том, чтобы...</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            уличить кого‑либо в неверных действиях и поступках
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            наказать нарушающих порядок организации сотрудников
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            обеспечить достижение целей организации
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            оказать позитивное стимулирующее воздействие (одобрение, поощрение) в целях мотивации сотрудников
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>оказать позитивное стимулирующее воздействие (одобрение, поощрение) в целях мотивации сотрудников</td>
+      <td style="text-align:right;">2</td>
+      <td>неверный ответ</td>
+    </tr>
+    
+    <tr>
+      <td>обеспечить достижение целей организации</td>
+      <td style="text-align:right;">7</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q81" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 81
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q81">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Каких барьеров при передаче информации не возникает:</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            культурно-национальных
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            языковых
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            технических
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            психологических
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            гуманитарных
+        </strong>
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>гуманитарных</td>
+      <td style="text-align:right;">5</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    <tr>
+      <td>технических</td>
+      <td style="text-align:right;">1</td>
+      <td>правильность неизвестна</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q82" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 82
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q82">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Организационно-административные методы управления осуществляется в следующих основных видах (может быть несколько правильных ответов):</p>
+            
+    
+        <input type="checkbox" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            разработка и внедрение рекомендаций
+        </strong>
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            издание приказов, распоряжений
+        </strong>
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" disabled="">
+    
+        
+            социальное регулирование
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            установление правил
+        </strong>
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" disabled="">
+    
+        
+            профессиональный отбор и обучение
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            контроль и надзор за деятельностью работников
+        </strong>
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" disabled="">
+    
+        
+            установление материальных санкций и поощрений
+        
+    <br>
+
+    
+        <input type="checkbox" class="task-list-item-checkbox" disabled="">
+    
+        
+            экономическое стимулирование
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">За</th>
+      <th style="text-align:right;">Против</th>
+    </tr>
+    </thead>
+    
+    <tbody>
+    
+    <tr>
+      <td>разработка и внедрение рекомендаций</td>
+      <td style="text-align:right;">5</td>
+      <td style="text-align:right;">3</td>
+    </tr>
+    
+    <tr>
+      <td>издание приказов, распоряжений</td>
+      <td style="text-align:right;">7</td>
+      <td style="text-align:right;">1</td>
+    </tr>
+    
+    <tr>
+      <td>социальное регулирование</td>
+      <td style="text-align:right;">2</td>
+      <td style="text-align:right;">6</td>
+    </tr>
+    
+    <tr>
+      <td>установление правил</td>
+      <td style="text-align:right;">7</td>
+      <td style="text-align:right;">1</td>
+    </tr>
+    
+    <tr>
+      <td>профессиональный отбор и обучение</td>
+      <td style="text-align:right;">1</td>
+      <td style="text-align:right;">7</td>
+    </tr>
+    
+    <tr>
+      <td>контроль и надзор за деятельностью работников</td>
+      <td style="text-align:right;">7</td>
+      <td style="text-align:right;">1</td>
+    </tr>
+    
+    <tr>
+      <td>установление материальных санкций и поощрений</td>
+      <td style="text-align:right;">3</td>
+      <td style="text-align:right;">5</td>
+    </tr>
+    
+    <tr>
+      <td>экономическое стимулирование</td>
+      <td style="text-align:right;">0</td>
+      <td style="text-align:right;">8</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q83" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 83
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q83">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Информационные связи между подразделениями (или между отдельными сотрудниками), находящимися на одном уровне управления - это коммуникации:</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            горизонтальным
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            нисходящим
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            восходящим
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            диагональным
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>горизонтальным</td>
+      <td style="text-align:right;">7</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+            <div class="row">
+                
+
+<div id="q84" class="card col-md-7 mb-4 mx-auto px-0">
+    <div class="card-header">
+        <h5 class="card-title">
+            Вопрос 84
+            <a class="anchor-link" aria-label="Anchor" href="https://syncshare.naloaty.me/app/quiz/view/?moodleHost=online-edu.mirea.ru&amp;quizId=342875#q84">
+                
+            </a>
+        </h5>
+    </div>
+    <div class="card-body">
+        
+            <p>Как наиболее полно и глубоко определяется понятие управления?</p>
+            
+    
+        <input type="radio" class="task-list-item-checkbox" checked="" disabled="">
+    
+        
+        <strong>
+            разработка управленческих решений и их реализация в практической деятельности
+        </strong>
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            полномочия на принятие решений и выдачу распоряжений
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            организационная деятельность руководителя по отношению к аппарату его помощников
+        
+    <br>
+
+    
+        <input type="radio" class="task-list-item-checkbox" disabled="">
+    
+        
+            передача информации на нижестоящий уровень
+        
+    <br>
+
+
+<p>Статистика: </p>
+
+
+    <table class="table table-bordered table-striped">
+    
+    <thead>
+    <tr>
+      <th>Вариант ответа</th>
+      <th style="text-align:right;">Выбрали этот вариант</th>
+      <th>Правильность</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td>разработка управленческих решений и их реализация в практической деятельности</td>
+      <td style="text-align:right;">7</td>
+      <td>верный ответ</td>
+    </tr>
+    
+    <tr>
+      <td>организационная деятельность руководителя по отношению к аппарату его помощников</td>
+      <td style="text-align:right;">1</td>
+      <td>неверный ответ</td>
+    </tr>
+    
+    </tbody>
+    
+    </table>
+
+        
+    </div>
+
+</div>
+            </div>
+
+        
+    <p>
+    </p></div>
+</div>
+<script src="./SyncShare_files/bootstrap.bundle.min.js.Без названия" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async="" src="./SyncShare_files/tex-mml-chtml.js.Без названия"></script>
+<script src="./SyncShare_files/highlight.min.js.Без названия" integrity="sha512-D9gUyxqja7hBtkWpPWGt9wfbfaMGVt9gnyCvYa+jojwwPHLCzUm5i8rpk7vD7wNee9bA35eYIjobYPaQuKS1MQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./SyncShare_files/highlightjs-line-numbers.min.js.Без названия"></script>
+<script src="./SyncShare_files/highlightjs-copy.min.js.Без названия"></script>
+<script>
+    hljs.highlightAll();
+    hljs.initLineNumbersOnLoad();
+    hljs.addPlugin(new CopyButtonPlugin());
+</script>
+
+
+</body></html>
