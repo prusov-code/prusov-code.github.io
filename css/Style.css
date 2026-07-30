@@ -583,7 +583,7 @@ main .more_projects .items {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: stretch;
-	gap: 24px;
+	gap: 40px;
 }
 main .more_projects .items .item {
 	display: flex;
