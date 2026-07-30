@@ -10,7 +10,7 @@
 				'Обо мне',
 				'Принципы работы',
 				'Портфолио',
-				'Технический раздел',
+				'Технологии',
 				'Контакты'
 			],
 			intro: 'Разработка, ведение и продвижение сайтов',
@@ -47,6 +47,8 @@
 			worksHeading: 'Портфолио',
 			moreButton: 'Подробнее',
 			visitButton: 'Посетить сайт',
+			closedButton: 'Сайт закрыт',
+			zoomHint: 'Нажмите, чтобы увеличить',
 			works: [
 				'Клиника «Придворный лекарь»',
 				'Учебный центр «Древо Познаний»',
@@ -58,7 +60,7 @@
 				'Художник Светлана Прусова',
 				'Сайт кафе «Ешь!»'
 			],
-			technicalHeading: 'Технический раздел',
+			technicalHeading: 'Технологии',
 			technicalSubtitles: [
 				'Основной стек:',
 				'Фреймворки, библиотеки и инструменты:',
@@ -70,7 +72,6 @@
 			contactsLead: 'Интересуют услуги? Свяжитесь со мной по контактам ниже.',
 			footerContacts: 'Контакты',
 			vkName: 'Никита Прусов',
-			archiveAlert: 'Сайт в архиве. Материалы — по запросу.',
 			popups: {
 				yesh: {
 					title: 'Сайт кафе «Ешь!»',
@@ -163,7 +164,7 @@
 				'About me',
 				'Work principles',
 				'Portfolio',
-				'Technical section',
+				'Technologies',
 				'Contacts'
 			],
 			intro: 'Website development, maintenance and promotion',
@@ -200,6 +201,8 @@
 			worksHeading: 'Portfolio',
 			moreButton: 'Learn more',
 			visitButton: 'Visit website',
+			closedButton: 'Site closed',
+			zoomHint: 'Click to enlarge',
 			works: [
 				'Clinic “Court Physician”',
 				'“Tree of Knowledge” training center',
@@ -211,7 +214,7 @@
 				'Artist Svetlana Prusova',
 				'Cafe “Yesh!”'
 			],
-			technicalHeading: 'Technical section',
+			technicalHeading: 'Technologies',
 			technicalSubtitles: [
 				'Main stack:',
 				'Frameworks, libraries and tools:',
@@ -223,7 +226,6 @@
 			contactsLead: 'Interested in my services? Contact me using the details below.',
 			footerContacts: 'Contacts',
 			vkName: 'Nikita Prusov',
-			archiveAlert: 'The website is archived. Materials are available on request.',
 			popups: {
 				yesh: {
 					title: 'Cafe “Yesh!” website',
@@ -331,7 +333,11 @@
 				$(this).text(data.items[i]);
 			}
 		});
-		$popup.find('.button_block button').text(i18n[currentLang].visitButton);
+		$popup.find('.button_block button').text(
+			$popup.find('.button_block--closed').length
+				? i18n[currentLang].closedButton
+				: i18n[currentLang].visitButton
+		);
 	}
 
 	function animatedTargets() {
@@ -435,10 +441,6 @@
 			}, SLIDE_MS);
 		}, SWAP_DELAY_MS);
 	}
-
-	window.showArchivedSiteAlert = function () {
-		alert(i18n[currentLang].archiveAlert);
-	};
 
 	$('.english_language').on('click', function () {
 		switchLanguage('en');
