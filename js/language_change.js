@@ -10,6 +10,7 @@
 				'Обо мне',
 				'Принципы работы',
 				'Портфолио',
+				'Другие проекты',
 				'Технологии',
 				'Контакты'
 			],
@@ -23,7 +24,9 @@
 				'Среди моих клиентов: строительные фирмы, частные клиники, учебные центры, кафе.',
 				'Я всегда максимально тщательно прорабатываю стратегию с заказчиком, создавая тем самым именно тот продукт, который необходим для развития и продвижения вашего бизнеса.',
 				'Я продолжаю вести свои проекты после окончания основных работ, решаю рутинные вопросы с доменом, хостингом, а также мелкими правками на сайте.',
-				'Я использую современные технологии веб-разработки, что значительно ускоряет и удешевляет производство сайтов.'
+				'Я использую современные технологии веб-разработки, что значительно ускоряет и удешевляет производство сайтов.',
+				'Студент 5 курса направления «Информационная безопасность автоматизированных систем».',
+				'Помимо сайтов занимаюсь автоматизацией и AI-tooling: активно работаю в Cursor, пишу MCP-серверы и тулы для агентов, интегрирую LLM по API. Также есть опыт в quantitative trading и разработке торговых роботов.'
 			],
 			principlesHeading: 'Принципы работы',
 			principles: [
@@ -49,6 +52,25 @@
 			visitButton: 'Посетить сайт',
 			closedButton: 'Сайт закрыт',
 			zoomHint: 'Нажмите, чтобы увеличить',
+			moreProjectsHeading: 'Другие проекты',
+			moreProjectsLead: 'Смежные направления, с которыми тоже работаю.',
+			moreProjects: [
+				{
+					tag: 'Автоматизация',
+					title: 'Автоматизация процессов',
+					text: 'Делаю автоматизацию под задачу: скрипты и сервисы с БД и внешними API, при необходимости с LLM, а также веб-админки для настройки и контроля.'
+				},
+				{
+					tag: 'AI / агенты',
+					title: 'MCP-серверы и инструменты для агентов',
+					text: 'Пишу MCP-серверы и тулы для AI-агентов, чтобы подключать модели к API, данным и рабочим процессам и давать агентам выполнять реальные действия, а не только отвечать текстом.'
+				},
+				{
+					tag: 'Алготрейдинг',
+					title: 'Quantitative trading',
+					text: 'Опыт в квантинге и проектах торговых роботов, а также интеграции LLM API в исследовательские и торговые пайплайны с обогащением контекста данными из внешних источников.'
+				}
+			],
 			works: [
 				'Клиника «Придворный лекарь»',
 				'Учебный центр «Древо Познаний»',
@@ -65,7 +87,8 @@
 				'Основной стек:',
 				'Фреймворки, библиотеки и инструменты:',
 				'Базы данных:',
-				'Инфраструктура и практики:'
+				'Инфраструктура и практики:',
+				'AI / agent tooling:'
 			],
 			githubHeading: 'Мой GitHub',
 			contactsHeading: 'Контакты',
@@ -164,6 +187,7 @@
 				'About me',
 				'Work principles',
 				'Portfolio',
+				'More projects',
 				'Technologies',
 				'Contacts'
 			],
@@ -177,7 +201,9 @@
 				'Among my clients: construction companies, private clinics, training centers, cafes.',
 				'I always work out the strategy with the client as carefully as possible, creating exactly the product needed for the growth and promotion of your business.',
 				'I continue to maintain my projects after the main work is done, handling routine domain and hosting issues as well as minor site edits.',
-				'I use modern web development technologies, which significantly speeds up and reduces the cost of website production.'
+				'I use modern web development technologies, which significantly speeds up and reduces the cost of website production.',
+				'5th-year student in Information Security of Automated Systems.',
+				'Besides websites, I work on automation and AI tooling: I actively use Cursor, build MCP servers and agent tools, and integrate LLMs via API. I also have experience in quantitative trading and building trading bots.'
 			],
 			principlesHeading: 'Work principles',
 			principles: [
@@ -203,6 +229,25 @@
 			visitButton: 'Visit website',
 			closedButton: 'Site closed',
 			zoomHint: 'Click to enlarge',
+			moreProjectsHeading: 'More projects',
+			moreProjectsLead: 'Related areas I also work in.',
+			moreProjects: [
+				{
+					tag: 'Automation',
+					title: 'Process automation',
+					text: 'I build task-specific automation: scripts and services with databases and external APIs, LLM where needed, plus web admin panels for setup and control.'
+				},
+				{
+					tag: 'AI / agents',
+					title: 'MCP servers and agent tools',
+					text: 'I build MCP servers and tools for AI agents to connect models to APIs, data, and workflows so agents can take real actions, not just reply with text.'
+				},
+				{
+					tag: 'Algo trading',
+					title: 'Quantitative trading',
+					text: 'Experience in quant trading and trading-bot projects, including LLM API integrations in research and trading pipelines with context enrichment from external data sources.'
+				}
+			],
 			works: [
 				'Clinic “Court Physician”',
 				'“Tree of Knowledge” training center',
@@ -219,7 +264,8 @@
 				'Main stack:',
 				'Frameworks, libraries and tools:',
 				'Databases:',
-				'Infrastructure and practices:'
+				'Infrastructure and practices:',
+				'AI / agent tooling:'
 			],
 			githubHeading: 'My GitHub',
 			contactsHeading: 'Contacts',
@@ -314,14 +360,12 @@
 
 	function setNav(t) {
 		var html = '';
-		var hrefs = ['#about_me', '#principles', '#works', '#technical_part', '#contacts'];
+		var hrefs = ['#about_me', '#principles', '#works', '#more_projects', '#technical_part', '#contacts'];
 		for (var i = 0; i < t.nav.length; i++) {
 			html += '<a href="' + hrefs[i] + '"><li>' + t.nav[i] + '</li></a>';
 		}
 		$('.nav').html(html);
-		$('.menu-hide nav ul a').each(function (i) {
-			$(this).find('li').text(t.nav[i]);
-		});
+		$('.menu-hide nav ul').html(html);
 	}
 
 	function setPopup(key, data) {
@@ -355,6 +399,11 @@
 				'#works > h1',
 				'#works .items .item > p',
 				'#works .open_popup',
+				'#more_projects > h1',
+				'#more_projects .more_projects_lead',
+				'#more_projects .items .item .tag',
+				'#more_projects .items .item .title',
+				'#more_projects .items .item .regular',
 				'#technical_part > h1',
 				'#technical_part > h3',
 				'.contacts > h1',
@@ -399,6 +448,15 @@
 			$(this).children('p').first().html(t.works[i]);
 		});
 		$('#works .open_popup').text(t.moreButton);
+
+		$('#more_projects > h1').text(t.moreProjectsHeading);
+		$('#more_projects .more_projects_lead').text(t.moreProjectsLead);
+		$('#more_projects .items .item').each(function (i) {
+			if (!t.moreProjects[i]) return;
+			$(this).find('.tag').text(t.moreProjects[i].tag);
+			$(this).find('.title').text(t.moreProjects[i].title);
+			$(this).find('.regular').text(t.moreProjects[i].text);
+		});
 
 		$('#technical_part > h1').first().text(t.technicalHeading);
 		$('#technical_part > h3').each(function (i) {
