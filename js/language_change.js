@@ -332,6 +332,30 @@
 		$popup.find('.button_block button').text(i18n[currentLang].visitButton);
 	}
 
+	function animatedTargets() {
+		return $(
+			[
+				'.nav',
+				'.intro > h3',
+				'#about_me > h1',
+				'.about_me .text_block h1',
+				'.about_me .text_block h2',
+				'.about_me .text_block p',
+				'#principles > h1',
+				'.principles .items .item .title',
+				'.principles .items .item .regular',
+				'#works > h1',
+				'#works .items .item > p',
+				'#works .open_popup',
+				'#technical_part > h1',
+				'#technical_part > h3',
+				'.contacts > h1',
+				'.contacts > h3',
+				'.footer_title'
+			].join(', ')
+		);
+	}
+
 	function applyLanguage(lang) {
 		if (!i18n[lang]) return;
 		currentLang = lang;
@@ -385,17 +409,37 @@
 		});
 	}
 
+	var isAnimating = false;
+	var SLIDE_MS = 400;
+	var SWAP_DELAY_MS = 1000;
+
+	function switchLanguage(lang) {
+		if (!i18n[lang] || lang === currentLang || isAnimating) return;
+		isAnimating = true;
+
+		var $els = animatedTargets();
+		$els.stop(true, true).slideUp(SLIDE_MS);
+
+		setTimeout(function () {
+			applyLanguage(lang);
+			$els.stop(true, true).slideDown(SLIDE_MS, function () {
+				// callback fires per element; unlock after first complete cycle via timeout
+			});
+			setTimeout(function () {
+				isAnimating = false;
+			}, SLIDE_MS);
+		}, SWAP_DELAY_MS);
+	}
+
 	window.showArchivedSiteAlert = function () {
 		alert(i18n[currentLang].archiveAlert);
 	};
 
 	$('.english_language').on('click', function () {
-		if (currentLang === 'en') return;
-		applyLanguage('en');
+		switchLanguage('en');
 	});
 
 	$('.russian_language').on('click', function () {
-		if (currentLang === 'ru') return;
-		applyLanguage('ru');
+		switchLanguage('ru');
 	});
 })(jQuery);
