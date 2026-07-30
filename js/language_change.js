@@ -53,22 +53,23 @@
 			closedButton: 'Сайт закрыт',
 			zoomHint: 'Нажмите, чтобы увеличить',
 			moreProjectsHeading: 'Автоматизация и AI',
-			moreProjectsLead: 'Смежные направления, с которыми тоже работаю. Часть проектов не публикую из‑за NDA, внутренних систем и коммерческой чувствительности.',
+			moreProjectsLead: 'Смежные направления, с которыми я тоже работаю. Часть проектов не публикую из‑за NDA, внутренних систем и коммерческой чувствительности.',
 			moreProjects: [
 				{
 					tag: 'Автоматизация',
 					title: 'Автоматизация процессов',
-					text: 'Делаю автоматизацию под задачу: скрипты и сервисы с БД и внешними API, при необходимости с LLM, а также веб-админки для настройки и контроля.'
+					text: 'Реализую автоматизацию под задачу: скрипты и сервисы с БД и интеграциями с внешними API и LLM, а также веб-админки для настройки и контроля.'
 				},
 				{
 					tag: 'AI / агенты',
 					title: 'MCP-серверы и инструменты для агентов',
-					text: 'Пишу MCP-серверы и тулы для AI-агентов, чтобы подключать модели к API, данным и рабочим процессам и давать агентам выполнять реальные действия, а не только отвечать текстом.'
+					text: 'Пишу MCP-серверы и тулы для AI-агентов, чтобы LLM могли взаимодействовать с данными и рабочими процессами бизнеса, давая агентам выполнять реальные действия, а не только отвечать текстом.'
 				},
 				{
 					tag: 'Алготрейдинг',
 					title: 'Quantitative trading',
-					text: 'Опыт в квантинге и проектах торговых роботов, а также интеграции LLM API в исследовательские и торговые пайплайны с обогащением контекста данными из внешних источников.'
+					text: 'Имею %e% в квантинге и написании торговых роботов, а также интеграции LLM в торговые/исследовательские пайплайны с обогащением контекста данными из внешних источников.',
+					easter: 'успешный опыт'
 				}
 			],
 			works: [
@@ -235,17 +236,18 @@
 				{
 					tag: 'Automation',
 					title: 'Process automation',
-					text: 'I build task-specific automation: scripts and services with databases and external APIs, LLM where needed, plus web admin panels for setup and control.'
+					text: 'I implement task-specific automation: scripts and services with databases and integrations with external APIs and LLMs, plus web admin panels for setup and control.'
 				},
 				{
 					tag: 'AI / agents',
 					title: 'MCP servers and agent tools',
-					text: 'I build MCP servers and tools for AI agents to connect models to APIs, data, and workflows so agents can take real actions, not just reply with text.'
+					text: 'I build MCP servers and tools for AI agents so LLMs can interact with business data and workflows, enabling agents to take real actions rather than only reply with text.'
 				},
 				{
 					tag: 'Algo trading',
 					title: 'Quantitative trading',
-					text: 'Experience in quant trading and trading-bot projects, including LLM API integrations in research and trading pipelines with context enrichment from external data sources.'
+					text: 'I have %e% in quant trading and building trading bots, as well as integrating LLMs into trading/research pipelines with context enrichment from external data sources.',
+					easter: 'successful experience'
 				}
 			],
 			works: [
@@ -453,9 +455,21 @@
 		$('#more_projects .more_projects_lead').text(t.moreProjectsLead);
 		$('#more_projects .items .item').each(function (i) {
 			if (!t.moreProjects[i]) return;
-			$(this).find('.tag').text(t.moreProjects[i].tag);
-			$(this).find('.title').text(t.moreProjects[i].title);
-			$(this).find('.regular').text(t.moreProjects[i].text);
+			var data = t.moreProjects[i];
+			$(this).find('.tag').text(data.tag);
+			$(this).find('.title').text(data.title);
+			var $regular = $(this).find('.regular');
+			if (data.easter) {
+				var easterHtml =
+					'<span class="trading-easter" tabindex="0">' +
+					data.easter +
+					'<span class="trading-easter__preview" aria-hidden="true">' +
+					'<img src="/images/misc/income.jpg" alt="" loading="lazy">' +
+					'</span></span>';
+				$regular.html(data.text.split('%e%').join(easterHtml));
+			} else {
+				$regular.text(data.text);
+			}
 		});
 
 		$('#technical_part > h1').first().text(t.technicalHeading);
@@ -506,5 +520,18 @@
 
 	$('.russian_language').on('click', function () {
 		switchLanguage('ru');
+	});
+
+	$(document).on('click', '.trading-easter', function (e) {
+		if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+			return;
+		}
+		e.stopPropagation();
+		var $egg = $(this);
+		$('.trading-easter').not($egg).removeClass('is-open');
+		$egg.toggleClass('is-open');
+	});
+	$(document).on('click', function () {
+		$('.trading-easter').removeClass('is-open');
 	});
 })(jQuery);
