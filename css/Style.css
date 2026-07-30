@@ -696,6 +696,13 @@ main .technical_part .programming_languages img{
 	width: 30px;
 	margin-right: 6px;
 }
+main .technical_part .programming_languages i {
+	width: 30px;
+	margin-right: 6px;
+	font-size: 22px;
+	text-align: center;
+	color: #fff;
+}
 main .technical_part .summary {
 	display: flex;
 	align-items: center;

@@ -61,14 +61,15 @@
 			technicalHeading: 'Технический раздел',
 			technicalSubtitles: [
 				'Основной стек:',
-				'Фреймворки, библиотеки и другие технологии:',
+				'Фреймворки, библиотеки и инструменты:',
 				'Базы данных:',
-				'Дополнительные технологии:'
+				'Инфраструктура и практики:'
 			],
 			githubHeading: 'Мой GitHub',
 			contactsHeading: 'Контакты',
 			contactsLead: 'Интересуют услуги? Свяжитесь со мной по контактам ниже.',
 			footerContacts: 'Контакты',
+			vkName: 'Никита Прусов',
 			archiveAlert: 'Сайт в архиве. Материалы — по запросу.',
 			popups: {
 				yesh: {
@@ -213,14 +214,15 @@
 			technicalHeading: 'Technical section',
 			technicalSubtitles: [
 				'Main stack:',
-				'Frameworks, libraries and other technologies:',
+				'Frameworks, libraries and tools:',
 				'Databases:',
-				'Additional technologies:'
+				'Infrastructure and practices:'
 			],
 			githubHeading: 'My GitHub',
 			contactsHeading: 'Contacts',
 			contactsLead: 'Interested in my services? Contact me using the details below.',
 			footerContacts: 'Contacts',
+			vkName: 'Nikita Prusov',
 			archiveAlert: 'The website is archived. Materials are available on request.',
 			popups: {
 				yesh: {
@@ -403,6 +405,9 @@
 		$('.contacts > h1').text(t.contactsHeading);
 		$('.contacts > h3').text(t.contactsLead);
 		$('.footer_title').text(t.footerContacts);
+		$('.footer_regular[href="https://vk.com/nik_prusov"]').html(
+			'<i class="fa fa-vk" aria-hidden="true"></i>' + t.vkName
+		);
 
 		Object.keys(t.popups).forEach(function (key) {
 			setPopup(key, t.popups[key]);
