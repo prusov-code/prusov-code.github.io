@@ -66,7 +66,6 @@ header .top {
 	position: relative;
 }
 header .top h1 {
-  animation: blur .75s ease-out infinite;
   margin: 0;
   font-size: 50px;
   text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
@@ -74,11 +73,11 @@ header .top h1 {
 header .top h1 span {
 	margin-right: 10px;
 	font-size: 40px;
-	animation: blur .75s ease-out infinite;
 	padding: 5px 10px;
 	background: white;
 	color: black;
 	border-radius: 4px;
+	text-shadow: none;
 }
 header .top .mobile_flags {
 	margin-bottom: 10px;
@@ -112,21 +111,41 @@ header .bottom .flags img{
 	cursor: pointer;
 }
 @media(min-width: 1024px) {
-	@keyframes blur {
-  from {
-    text-shadow:0px 0px 10px #fff,
-      0px 0px 10px #fff, 
-      0px 0px 25px #fff,
-      0px 0px 25px #fff,
-      0px 0px 30px #fff,
-      0px 0px 30px #7B96B8,
-      0px -10px 50px #7B96B8;
-  }
-}
+	header .top h1 {
+		animation: logoGlow 0.75s ease-in-out infinite alternate;
+	}
+	@keyframes logoGlow {
+		from {
+			text-shadow:
+				0 0 5px #fff,
+				0 0 7px #fff;
+		}
+		to {
+			text-shadow:
+				0 0 10px #fff,
+				0 0 18px #fff,
+				0 0 28px #7B96B8,
+				0 -8px 36px #7B96B8;
+		}
+	}
 }
 @media(max-width: 1024px) {
 	header .top h1 {
-		text-shadow:0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 0px #fff, 0px 0px 25px #fff, 0px 0px 0px #fff, 0px 0px 30px #7b96b8, 0px -10px 20px #7b96b8
+		-webkit-animation: logoGlowMobile 0.9s ease-in-out infinite alternate;
+		animation: logoGlowMobile 0.9s ease-in-out infinite alternate;
+	}
+	@keyframes logoGlowMobile {
+		from {
+			text-shadow:
+				0 0 3px rgba(255, 255, 255, 0.55),
+				0 0 8px rgba(123, 150, 184, 0.35);
+		}
+		to {
+			text-shadow:
+				0 0 6px rgba(255, 255, 255, 0.9),
+				0 0 14px rgba(255, 255, 255, 0.55),
+				0 0 22px rgba(123, 150, 184, 0.65);
+		}
 	}
 }
 /*@keyframes blur {

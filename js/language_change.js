@@ -10,7 +10,7 @@
 				'Обо мне',
 				'Принципы работы',
 				'Портфолио',
-				'Другие проекты',
+				'Автоматизация и AI',
 				'Технологии',
 				'Контакты'
 			],
@@ -52,8 +52,8 @@
 			visitButton: 'Посетить сайт',
 			closedButton: 'Сайт закрыт',
 			zoomHint: 'Нажмите, чтобы увеличить',
-			moreProjectsHeading: 'Другие проекты',
-			moreProjectsLead: 'Смежные направления, с которыми тоже работаю.',
+			moreProjectsHeading: 'Автоматизация и AI',
+			moreProjectsLead: 'Смежные направления, с которыми тоже работаю. Часть проектов не публикую из‑за NDA, внутренних систем и коммерческой чувствительности.',
 			moreProjects: [
 				{
 					tag: 'Автоматизация',
@@ -187,7 +187,7 @@
 				'About me',
 				'Work principles',
 				'Portfolio',
-				'More projects',
+				'Automation and AI',
 				'Technologies',
 				'Contacts'
 			],
@@ -229,8 +229,8 @@
 			visitButton: 'Visit website',
 			closedButton: 'Site closed',
 			zoomHint: 'Click to enlarge',
-			moreProjectsHeading: 'More projects',
-			moreProjectsLead: 'Related areas I also work in.',
+			moreProjectsHeading: 'Automation and AI',
+			moreProjectsLead: 'Related areas I also work in. Some projects are not public due to NDA, internal systems, and commercial sensitivity.',
 			moreProjects: [
 				{
 					tag: 'Automation',
