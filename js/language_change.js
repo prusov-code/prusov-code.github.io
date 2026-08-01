@@ -20,13 +20,11 @@
 			aboutRole: 'Full-stack веб-разработчик',
 			aboutServices: 'Полный спектр услуг веб-разработки: frontend, backend, SEO.',
 			aboutParagraphs: [
-				'Я занимаюсь веб-разработкой уже более 3 лет. Среди моих работ присутствуют как небольшие сайты-визитки, так и полноценные интернет-магазины и веб-сервисы.',
-				'Среди моих клиентов: строительные фирмы, частные клиники, учебные центры, кафе.',
-				'Я всегда максимально тщательно прорабатываю стратегию с заказчиком, создавая тем самым именно тот продукт, который необходим для развития и продвижения вашего бизнеса.',
-				'Я продолжаю вести свои проекты после окончания основных работ, решаю рутинные вопросы с доменом, хостингом, а также мелкими правками на сайте.',
-				'Я использую современные технологии веб-разработки, что значительно ускоряет и удешевляет производство сайтов.',
-				'Студент 5 курса направления «Информационная безопасность автоматизированных систем».',
-				'Помимо сайтов занимаюсь автоматизацией и AI-tooling: активно работаю в Cursor, пишу MCP-серверы и тулы для агентов, интегрирую LLM по API. Также есть опыт в quantitative trading и разработке торговых роботов.'
+				'Разрабатываю сайты и веб-сервисы более 3 лет: от сайтов-визиток до интернет-магазинов и сложных веб-сервисов — примеры можно посмотреть в разделе <a href="#works" class="about-link">Портфолио</a>. Работал с строительными компаниями, частными клиниками, учебными центрами и кафе — знаю специфику разных ниш и умею быстро вникать в новый бизнес.',
+				'Перед началом работы всегда прорабатываю стратегию с заказчиком: важно не просто «сделать сайт», а создать инструмент, который решает конкретные бизнес-задачи — привлекает клиентов, упрощает продажи, экономит время.',
+				'Сопровождаю проекты и после запуска: беру на себя домен, хостинг, мелкие правки и техническую поддержку, чтобы вы могли сосредоточиться на бизнесе, а не на администрировании сайта.',
+				'Помимо классической веб-разработки, занимаюсь автоматизацией и AI-инструментами: работаю с Cursor, пишу MCP-серверы и тулы для AI-агентов, интегрирую LLM через API. Это позволяет добавлять в проекты умную автоматизацию там, где это реально экономит время и деньги клиента — подробнее в разделе <a href="#more_projects" class="about-link">Автоматизация и AI</a>.',
+				'Учусь на 5 курсе по направлению «Информационная безопасность автоматизированных систем» — это даёт дополнительное понимание рисков информационной безопасности и требований к надёжности систем.'
 			],
 			principlesHeading: 'Принципы работы',
 			principles: [
@@ -198,13 +196,11 @@
 			aboutRole: 'Full-stack web developer',
 			aboutServices: 'Full range of web development services: frontend, backend, SEO.',
 			aboutParagraphs: [
-				'I have been doing web development for more than 3 years. Among my works there are both small business-card sites and full-fledged online stores and web services.',
-				'Among my clients: construction companies, private clinics, training centers, cafes.',
-				'I always work out the strategy with the client as carefully as possible, creating exactly the product needed for the growth and promotion of your business.',
-				'I continue to maintain my projects after the main work is done, handling routine domain and hosting issues as well as minor site edits.',
-				'I use modern web development technologies, which significantly speeds up and reduces the cost of website production.',
-				'5th-year student in Information Security of Automated Systems.',
-				'Besides websites, I work on automation and AI tooling: I actively use Cursor, build MCP servers and agent tools, and integrate LLMs via API. I also have experience in quantitative trading and building trading bots.'
+				'I have been building websites and web services for more than 3 years: from business-card sites to online stores and complex web services — you can see examples in the <a href="#works" class="about-link">Portfolio</a> section. I have worked with construction companies, private clinics, training centers, and cafes — I know the specifics of different niches and can quickly get up to speed on a new business.',
+				'Before starting work, I always develop a strategy with the client: the goal is not just to “make a website”, but to create a tool that solves concrete business tasks — attracting clients, simplifying sales, and saving time.',
+				'I also support projects after launch: I handle the domain, hosting, minor edits, and technical support so you can focus on the business rather than site administration.',
+				'Besides classic web development, I work with automation and AI tools: I use Cursor, build MCP servers and tools for AI agents, and integrate LLMs via API. This makes it possible to add smart automation where it truly saves the client time and money — more in the <a href="#more_projects" class="about-link">Automation and AI</a> section.',
+				'I am a 5th-year student in Information Security of Automated Systems — this gives me additional understanding of information security risks and system reliability requirements.'
 			],
 			principlesHeading: 'Work principles',
 			principles: [
@@ -433,7 +429,7 @@
 		$('.about_me .text_block h2').eq(1).text(t.aboutServices);
 		$('.about_me .text_block p').each(function (i) {
 			if (t.aboutParagraphs[i]) {
-				$(this).text(t.aboutParagraphs[i]);
+				$(this).html(t.aboutParagraphs[i]);
 			}
 		});
 

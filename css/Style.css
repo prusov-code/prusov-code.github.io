@@ -639,12 +639,13 @@ main .more_projects .items .item .regular {
 	line-height: 1.5;
 	color: rgba(255, 255, 255, 0.92);
 }
+main .about_me .about-link,
 main .more_projects .trading-easter {
 	position: relative;
 	display: inline;
-	cursor: help;
 	color: inherit;
 	border-bottom: none;
+	text-decoration: none;
 	background-image: repeating-linear-gradient(
 		90deg,
 		rgba(168, 196, 232, 1) 0 5px,
@@ -658,6 +659,14 @@ main .more_projects .trading-easter {
 		tradingEasterGlow 1.5s ease-in-out infinite,
 		tradingEasterDash 0.55s linear infinite;
 }
+main .about_me .about-link {
+	cursor: pointer;
+}
+main .more_projects .trading-easter {
+	cursor: help;
+}
+main .about_me .about-link:hover,
+main .about_me .about-link:focus,
 main .more_projects .trading-easter:hover,
 main .more_projects .trading-easter:focus,
 main .more_projects .trading-easter.is-open {
@@ -744,11 +753,14 @@ main .more_projects .trading-easter.is-open .trading-easter__preview {
 	100% { background-position: 30px 100%; }
 }
 @media (prefers-reduced-motion: reduce) {
+	main .about_me .about-link,
 	main .more_projects .trading-easter {
 		animation: none;
 		background-image: none;
 		border-bottom: 1px dashed rgba(255, 255, 255, 0.7);
 	}
+	main .about_me .about-link:hover,
+	main .about_me .about-link:focus,
 	main .more_projects .trading-easter:hover,
 	main .more_projects .trading-easter:focus,
 	main .more_projects .trading-easter.is-open {
