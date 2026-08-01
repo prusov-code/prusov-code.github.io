@@ -8,9 +8,9 @@
 			scrollTop: 'Наверх',
 			nav: [
 				'Обо мне',
+				'Автоматизация и AI',
 				'Принципы работы',
 				'Портфолио',
-				'Автоматизация и AI',
 				'Технологии',
 				'Контакты'
 			],
@@ -20,7 +20,7 @@
 			aboutRole: 'Full-stack веб-разработчик',
 			aboutServices: 'Полный спектр услуг веб-разработки: frontend, backend, SEO.',
 			aboutParagraphs: [
-				'Разрабатываю сайты и веб-сервисы более 3 лет: от сайтов-визиток до интернет-магазинов и сложных веб-сервисов — примеры можно посмотреть в разделе <a href="#works" class="about-link">Портфолио</a>. Работал с строительными компаниями, частными клиниками, учебными центрами и кафе — знаю специфику разных ниш и умею быстро вникать в новый бизнес.',
+				'Разрабатываю сайты и веб-сервисы более 4 лет: от сайтов-визиток до интернет-магазинов и сложных веб-сервисов — примеры можно посмотреть в разделе <a href="#works" class="about-link">Портфолио</a>. Работал с строительными компаниями, частными клиниками, учебными центрами и кафе — знаю специфику разных ниш и умею быстро вникать в новый бизнес.',
 				'Перед началом работы всегда прорабатываю стратегию с заказчиком: важно не просто «сделать сайт», а создать инструмент, который решает конкретные бизнес-задачи — привлекает клиентов, упрощает продажи, экономит время.',
 				'Сопровождаю проекты и после запуска: беру на себя домен, хостинг, мелкие правки и техническую поддержку, чтобы вы могли сосредоточиться на бизнесе, а не на администрировании сайта.',
 				'Помимо классической веб-разработки, занимаюсь автоматизацией и AI-инструментами: работаю с Cursor, пишу MCP-серверы и тулы для AI-агентов, интегрирую LLM через API. Это позволяет добавлять в проекты умную автоматизацию там, где это реально экономит время и деньги клиента — подробнее в разделе <a href="#more_projects" class="about-link">Автоматизация и AI</a>.',
@@ -51,7 +51,7 @@
 			closedButton: 'Сайт закрыт',
 			zoomHint: 'Нажмите, чтобы увеличить',
 			moreProjectsHeading: 'Автоматизация и AI',
-			moreProjectsLead: 'Смежные направления, с которыми я тоже работаю. Часть проектов не публикую из‑за NDA, внутренних систем и коммерческой чувствительности.',
+			moreProjectsLead: 'Помимо веб-разработки, есть ряд смежных направлений, с которыми я тоже работаю. Часть проектов не публикую из‑за NDA, внутренних систем и коммерческой чувствительности.',
 			moreProjects: [
 				{
 					tag: 'Автоматизация',
@@ -184,9 +184,9 @@
 			scrollTop: 'Back to top',
 			nav: [
 				'About me',
+				'Automation and AI',
 				'Work principles',
 				'Portfolio',
-				'Automation and AI',
 				'Technologies',
 				'Contacts'
 			],
@@ -196,7 +196,7 @@
 			aboutRole: 'Full-stack web developer',
 			aboutServices: 'Full range of web development services: frontend, backend, SEO.',
 			aboutParagraphs: [
-				'I have been building websites and web services for more than 3 years: from business-card sites to online stores and complex web services — you can see examples in the <a href="#works" class="about-link">Portfolio</a> section. I have worked with construction companies, private clinics, training centers, and cafes — I know the specifics of different niches and can quickly get up to speed on a new business.',
+				'I have been building websites and web services for more than 4 years: from business-card sites to online stores and complex web services — you can see examples in the <a href="#works" class="about-link">Portfolio</a> section. I have worked with construction companies, private clinics, training centers, and cafes — I know the specifics of different niches and can quickly get up to speed on a new business.',
 				'Before starting work, I always develop a strategy with the client: the goal is not just to “make a website”, but to create a tool that solves concrete business tasks — attracting clients, simplifying sales, and saving time.',
 				'I also support projects after launch: I handle the domain, hosting, minor edits, and technical support so you can focus on the business rather than site administration.',
 				'Besides classic web development, I work with automation and AI tools: I use Cursor, build MCP servers and tools for AI agents, and integrate LLMs via API. This makes it possible to add smart automation where it truly saves the client time and money — more in the <a href="#more_projects" class="about-link">Automation and AI</a> section.',
@@ -227,7 +227,7 @@
 			closedButton: 'Site closed',
 			zoomHint: 'Click to enlarge',
 			moreProjectsHeading: 'Automation and AI',
-			moreProjectsLead: 'Related areas I also work in. Some projects are not public due to NDA, internal systems, and commercial sensitivity.',
+			moreProjectsLead: 'Besides web development, there are several related areas I also work in. Some projects are not public due to NDA, internal systems, and commercial sensitivity.',
 			moreProjects: [
 				{
 					tag: 'Automation',
@@ -358,7 +358,7 @@
 
 	function setNav(t) {
 		var html = '';
-		var hrefs = ['#about_me', '#principles', '#works', '#more_projects', '#technical_part', '#contacts'];
+		var hrefs = ['#about_me', '#more_projects', '#principles', '#works', '#technical_part', '#contacts'];
 		for (var i = 0; i < t.nav.length; i++) {
 			html += '<a href="' + hrefs[i] + '"><li>' + t.nav[i] + '</li></a>';
 		}
