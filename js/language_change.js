@@ -20,11 +20,11 @@
 			aboutRole: 'Full-stack веб-разработчик',
 			aboutServices: 'Полный спектр услуг веб-разработки: frontend, backend, SEO.',
 			aboutParagraphs: [
-				'Разрабатываю сайты и веб-сервисы более 4 лет: от сайтов-визиток до интернет-магазинов и сложных веб-сервисов — примеры можно посмотреть в разделе <a href="#works" class="about-link">Портфолио</a>. Работал с строительными компаниями, частными клиниками, учебными центрами и кафе — знаю специфику разных ниш и умею быстро вникать в новый бизнес.',
+				'Разрабатываю сайты и веб-сервисы уже более 4 лет: от сайтов-визиток до интернет-магазинов и сложных веб-сервисов — некоторые примеры можно посмотреть в разделе <a href="#works" class="about-link">Портфолио</a>. Работал со строительными компаниями, частными клиниками, учебными центрами и кафе — знаю специфику разных ниш и умею быстро вникать в новый бизнес.',
 				'Перед началом работы всегда прорабатываю стратегию с заказчиком: важно не просто «сделать сайт», а создать инструмент, который решает конкретные бизнес-задачи — привлекает клиентов, упрощает продажи, экономит время.',
 				'Сопровождаю проекты и после запуска: беру на себя домен, хостинг, мелкие правки и техническую поддержку, чтобы вы могли сосредоточиться на бизнесе, а не на администрировании сайта.',
-				'Помимо классической веб-разработки, занимаюсь автоматизацией и AI-инструментами: работаю с Cursor, пишу MCP-серверы и тулы для AI-агентов, интегрирую LLM через API. Это позволяет добавлять в проекты умную автоматизацию там, где это реально экономит время и деньги клиента — подробнее в разделе <a href="#more_projects" class="about-link">Автоматизация и AI</a>.',
-				'Учусь на 5 курсе по направлению «Информационная безопасность автоматизированных систем» — это даёт дополнительное понимание рисков информационной безопасности и требований к надёжности систем.'
+				'Помимо классической веб-разработки, занимаюсь автоматизацией и AI-инструментами: работаю с Cursor, пишу MCP-серверы и инструменты для AI-агентов, интегрирую LLM через API. Это позволяет добавлять в проекты умную автоматизацию там, где это реально экономит время и деньги клиента — подробнее в разделе <a href="#more_projects" class="about-link">Автоматизация и AI</a>.',
+				'Учусь на 5-м курсе по направлению «Информационная безопасность автоматизированных систем» — это даёт дополнительное понимание рисков информационной безопасности и требований к надёжности систем.'
 			],
 			principlesHeading: 'Принципы работы',
 			principles: [
@@ -61,12 +61,12 @@
 				{
 					tag: 'AI / агенты',
 					title: 'MCP-серверы и инструменты для агентов',
-					text: 'Пишу MCP-серверы и тулы для AI-агентов, чтобы LLM могли взаимодействовать с данными и рабочими процессами бизнеса, давая агентам выполнять реальные действия, а не только отвечать текстом.'
+					text: 'Пишу MCP-серверы и инструменты для AI-агентов, чтобы LLM могли взаимодействовать с данными и рабочими процессами бизнеса, позволяя агентам выполнять реальные действия, а не только отвечать текстом.'
 				},
 				{
 					tag: 'Алготрейдинг',
 					title: 'Quantitative trading',
-					text: 'Имею %e% в квантинге и написании торговых роботов, а также интеграции LLM в торговые/исследовательские пайплайны с обогащением контекста данными из внешних источников.',
+					text: 'Имею %e% в квантовом трейдинге и написании торговых роботов, а также в интеграции LLM в торговые/исследовательские пайплайны с обогащением контекста данными из внешних источников.',
 					easter: 'успешный опыт'
 				}
 			],
@@ -75,8 +75,8 @@
 				'Учебный центр «Древо Познаний»',
 				'Сайт ОАНО частной начальной школы «Древо познаний»',
 				'Онлайн-сервис «Zenmix»',
-				'Строительная компания<br>«Глобал строй»',
-				'Строительство домов<br>«Глобал строй»',
+				'Строительная компания<br>«Глобал Строй»',
+				'Строительство домов<br>«Глобал Строй»',
 				'Сайт экономиста<br>Леонида Григорьева',
 				'Художник Светлана Прусова',
 				'Сайт кафе «Ешь!»'
@@ -125,7 +125,7 @@
 				},
 				drevo: {
 					title: 'Корпоративный сайт и школьный портал «Древо Познаний»',
-					description: 'Система школьного портала для учеников и учителей, переработка frontend, улучшение семантического ядра.',
+					description: 'Система школьного портала для учеников и учителей, переработка фронтенда, улучшение семантического ядра.',
 					items: [
 						'Создана система онлайн-дневника, где можно выставлять оценки и домашние задания ученикам. Ученики, в свою очередь, могут смотреть всю информацию на своей странице.',
 						'Переработан фронтенд сайта, оптимизирован под мобильные устройства.',
@@ -196,7 +196,7 @@
 			aboutRole: 'Full-stack web developer',
 			aboutServices: 'Full range of web development services: frontend, backend, SEO.',
 			aboutParagraphs: [
-				'I have been building websites and web services for more than 4 years: from business-card sites to online stores and complex web services — you can see examples in the <a href="#works" class="about-link">Portfolio</a> section. I have worked with construction companies, private clinics, training centers, and cafes — I know the specifics of different niches and can quickly get up to speed on a new business.',
+				'I have been building websites and web services for more than 4 years: from business-card sites to online stores and complex web services — you can see some examples in the <a href="#works" class="about-link">Portfolio</a> section. I have worked with construction companies, private clinics, training centers, and cafes — I know the specifics of different niches and can quickly get up to speed on a new business.',
 				'Before starting work, I always develop a strategy with the client: the goal is not just to “make a website”, but to create a tool that solves concrete business tasks — attracting clients, simplifying sales, and saving time.',
 				'I also support projects after launch: I handle the domain, hosting, minor edits, and technical support so you can focus on the business rather than site administration.',
 				'Besides classic web development, I work with automation and AI tools: I use Cursor, build MCP servers and tools for AI agents, and integrate LLMs via API. This makes it possible to add smart automation where it truly saves the client time and money — more in the <a href="#more_projects" class="about-link">Automation and AI</a> section.',
@@ -242,7 +242,7 @@
 				{
 					tag: 'Algo trading',
 					title: 'Quantitative trading',
-					text: 'I have %e% in quant trading and building trading bots, as well as integrating LLMs into trading/research pipelines with context enrichment from external data sources.',
+					text: 'I have %e% in quantitative trading and building trading bots, as well as in integrating LLMs into trading/research pipelines with context enrichment from external data sources.',
 					easter: 'successful experience'
 				}
 			],
